@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Venacular</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/094a0588c2.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/main.js"></script>
+    
+
+    <style>
+       
+ 
+        .col-3{
+            grid-template-columns: 9fr 1fr 2fr;
+        }
+
+    
+
+        .hero{
+            display: grid;
+            width: inherit;
+            width: auto;
+            height: 90vh;
+            background-image: url('./images/feature_01.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 3px solid #EEE5DE;
+        }
+
+        .logo img{
+            width: 300px;
+        }
+
+        .background{
+            width: auto;
+            height: 100vh;
+            background-image: url('./images/feature_01.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .info-bar{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 739px;
+            height: 400px;
+            background-color: transparent;
+            align-self: end;
+            justify-self: end;
+            font-family: 'modummedium', serif;
+        }
+
+        .box-3{
+            background-color: #EEE5DE;      
+            margin-right: 2rem;              
+        }
+
+        .box-2{
+            background-color: #F5986C;
+            opacity: 90%;
+            color: #EEE5DE;
+        }
+
+        .box-1{     
+            color: #EEE5DE;
+        }
+
+        .box-2, .box-3{
+            display: grid;
+            align-content: end;
+            align-items: end;
+            justify-items: end;
+        }
+
+        .box p{
+            font-size: 3rem;
+            padding: 0;
+        }
+
+        .about-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: start;
+            
+        }
+
+        #about{
+            display: grid;
+            place-items: center;
+            margin-bottom: -225px;
+        }
+
+
+
+        .print-container{
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 2fr;
+            padding-top: 4rem;
+            height: 80vh;
+            z-index: 1;
+            margin-top: -4rem;
+            width: 100%;
+            background-color: #EEE5DE;
+        }
+        .print-container img{
+            width: 100%;
+            z-index: 1;            
+        }
+
+        .about-blurb h1{
+            font-size: 1.7rem;
+            margin-bottom: 4rem;
+            font-family: 'modumbold';
+        }
+
+        .about-blurb h2{
+            font-family: 'bw_modelicaregular';
+            color: #EEE5DE;
+            background-color: black;
+            height: fit-content;
+            padding: 2rem;
+            padding-left: 4rem;
+            font-size: 1rem;
+            display: grid;
+            margin-left: -97px;
+            
+           
+        }
+
+        .about-blurb p{
+            color: #EEE5DE;
+            font-size: 1rem;
+        }
+
+        .about-blurb{
+            margin: 6rem;
+            display: grid;
+            align-content: center;
+        }
+
+   
+
+        .submissions{
+            height: 100vh;
+            background-color: #EEE5DE;
+
+        }
+
+        nav{
+            color: black;
+            justify-content: end;
+            z-index: 30;
+            padding: 2rem;
+            text-align: right;
+            position: sticky;
+        }
+
+
+        i{
+            font-weight: 400;
+            font-family: FontAwesome !important;
+            font-style: normal;
+            font-size: 1.5rem;
+            padding-left: 0.5rem;
+        }
+
+        h1{
+            font-family: 'bw_modelicabold';
+            color: #EEE5DE;
+        }
+
+        .box-3 a{
+            color: #D06136;
+        }
+
+
+        .feature-image{
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(./images/img-9893-ok.jpg);
+            background-position: top right;
+        }
+
+
+        a.box-link{
+            font-size: 3rem;   
+        }
+
+        .creator p{
+            color: #EEE5DE;
+            font-size: 1rem;
+            
+         
+        }
+
+        .creator{
+            display: grid;
+            align-items: end;
+            align-content: end; 
+        }
+
+        .submissions-container{
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .image-submission{
+            background-image: url('./images/casa.jpg');
+            width: inherit;
+            height: 85vh;
+            background-repeat: no-repeat;
+            background-size: contain;  
+     }
+
+     .more{
+        font-size: 1rem;
+        color: #EEE5DE;
+        padding: 4rem;
+        font-family: 'modumlight';
+        width: auto;
+        background-color: black;
+        margin-top: 68px;
+        z-index: 1;
+        height: fit-content;
+     }
+
+     .more h2{
+        font-family: 'modumbold';
+     }
+
+     p.number{
+        font-family: 'modumlight';
+     }
+
+     .top{
+         display: grid;
+     }
+
+     .attribution{
+        display: grid;
+        justify-content: start;
+        align-items: end;
+        background-color: #EEE5DE;
+     }
+     .attribution p{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-left: 1px;
+        margin-bottom: 4px;
+        font-family: 'modumlight';
+        opacity: 85%;
+        font-size: 14px;
+     }
+
+     header.header-top{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: calc(100% - 4rem);
+     }
+
+     .hero h1{
+         margin-top: 8.5rem;
+         margin-left: 4rem;
+         color: #EEE5DE;
+         font-family: 'bw_modelicabold';
+         opacity: 95%;
+         letter-spacing: 1px;
+         border-top: 2px solid #D06136;
+         padding-top: 2rem;
+         width: 100%;
+     }
+
+     .side-menu{
+         display: grid;
+        position: fixed;
+        right: 0;
+        height: 80vh;
+        width: 20%;
+        grid-template-rows: 1fr 1fr 1fr;
+     }
+
+     .box-3{
+         border-bottom: 2px solid #D06136;
+     }
+
+     .magazine{
+         display: grid;
+         width: 100%;
+         grid-template-columns: 1fr 1fr;
+         z-index: 1;
+     }
+
+     .magazine img{
+        width: 100%;
+        height: -webkit-fill-available;
+     }
+
+     .contact-form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'modumlight';
+     }
+
+    .contact-form .left {
+         background-image: url(./images/feature_01.jpg);
+     }
+
+     .contact-form .right{
+         padding: 2rem;
+         justify-items: flex-start;
+     }
+
+     .contact-form .right p{
+         font-family: 'modumlight';
+     }
+
+     textarea{
+         width: 100%;
+         height: 25vh;
+     }
+
+     textarea::placeholder{
+         opacity: 50%;
+         font-family: 'modumlight';
+     }
+
+     form{
+         margin-top: 1rem;
+         width: fit-content;
+     }
+
+     footer{
+         width: 100%;
+         background-color: black;
+         padding: 3rem;
+     }
+
+     footer a{
+         color: #EEE5DE;
+     }
+
+
+     nav img{
+        width: 241px;
+     }
+
+     nav a{
+         font-size: 16px;
+         padding-right: 1rem;
+     }
+
+     .watermark{
+        position: absolute;
+        opacity: 25%;
+        width: 2498px;
+        top: 1rem;
+        left: -3rem;
+       
+     }
+
+     .watermark-2{
+        position: absolute;
+        opacity: 10%;
+        width: 1400px;
+        top: 62rem;
+        z-index: 1;  
+
+     }
+
+
+
+     .watermark-3{
+        position: absolute;
+        opacity: 10%;
+        height: 230px;
+        width: 2498px;
+        top: 160rem;     
+     }
+
+     .heading{
+         display: flex;
+         z-index: 1;
+     }
+
+     .heading p {
+         font-family: 'bw_modelicabold';
+         font-size: 37px;
+         width: 585px;
+         padding-left: 11.875rem;
+     }
+
+     .slideshow-top{
+         display: flex;
+         justify-content: space-between;
+         margin: 0 12rem 0rem 4rem;
+     }
+
+     .slideshow{
+         display: grid;
+         place-items: center;
+         margin-top: -25px;
+         z-index: 1;
+     }
+     .slideshow img{
+         width: 1040px;
+         height: 500px;     
+       
+     }
+
+     button{
+         background-color: black;
+         color: #EEE5DE;
+         border: none;
+         padding: 1rem;
+         border-radius: 2rem;
+         width: 200px;
+         z-index: 2;
+         font-family: 'modum';
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         place-items: center;
+     }
+
+     .caption{
+        background-color: black;
+        color: white;
+        width: fit-content;
+        margin-top: -115px;
+        z-index: 1;
+        height: fit-content;
+        justify-self: end;
+     }
+
+     .caption p{
+         font-family: 'modum';
+         font-size: 12px;
+     }
+
+     .about{
+         display: grid;
+         height: 100vh;
+         grid-template-columns: 2fr 1fr 1fr;
+         
+     }
+
+     .bg1::after {
+  background-image: url('./images/2021_VSN_CASA_CLUB_SMA_PRINT_PHOTO_by_Rafael_Gamo_09.jpg');
+}
+
+
+     .left{
+        background-color: #EEE5DE;
+        display: grid;
+        padding: 2rem;
+     }
+
+     .middle{
+        margin-left: -15rem;
+        margin-top: 8rem;
+        background-attachment: fixed;
+        background-image: url(./images/img-9893-ok.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: auto;
+        height: auto;
+        background-size: contain;
+        perspective: 3px;
+        
+     }
+
+     .middle img{
+         width: 100%;
+         height: auto;
+         
+     }
+
+
+
+     .right{
+        background-color: #EEE5DE;
+        display: grid;
+        justify-items: end;
+        align-items: end;
+        margin: 9rem 0rem 1rem -3rem;
+        width: 90%;
+        align-content: center;
+     }
+
+     .right img{
+         width: 100%;
+         height: auto;
+     }
+
+     .about .left p{
+        width: 377px;
+        font-size: 32px;
+        font-family: 'bw_modelicaregular';
+        margin-top: 9rem;
+        margin-left: 4rem;
+        z-index: 2;
+     }
+
+     .about .right p{
+         
+         font-size: 14px;
+         font-family: 'bw_modelicabold';
+         z-index: 2;
+         padding-left: 0;
+         
+     }
+
+
+
+     .about-2{
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        margin-top: 5rem;
+        background-image: url(./images/2021_VSN_CASA_CLUB_SMA_PRINT_PHOTO_by_Rafael_Gamo_09.jpg);
+        background-size: cover;
+        background-position: center;
+     }
+
+     .about-2 img{
+        width: 100%;
+        height: auto;
+     }
+
+     .feature{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        place-items: center;
+     }
+
+     .feature .left img{
+         width: 100%;
+         height: auto;
+         z-index: 1;
+     }
+
+     .feature .right{
+        justify-items: flex-start;
+        align-content: center;
+        height: 100vh;
+        background-color: #EEE5DE;
+        width: 75%;
+     }
+
+     .feature .right p{
+        font-family: 'bw_modelicabold';
+        padding: 1rem 0rem 1rem 0rem;
+         width: 85%;
+         font-size: 13px;
+
+     }
+
+     .feature .right h2{
+        font-family: 'modum'; 
+        margin-bottom: 1rem;
+     }
+     .about-container h2{
+        font-family: 'bw_modelicaregular';
+        margin-bottom: 1rem;
+        font-size: 64px;
+        color: #D06136;
+        opacity: 77%;
+     }
+     .about-container p{
+         padding: 0;
+         font-family: 'bw_modelicabold';
+         font-size: 13px;
+         line-height: 1.4rem;
+     }
+     .connect{
+         margin-left: 12rem;
+         color: black;
+         padding: 1.5rem;
+         border-radius: 5%;
+     }
+     
+     .rewrite{
+         margin-right: 12rem;
+         color: black;
+         padding: 1.5rem;
+         border-radius: 5%;
+     }
+
+     .discover{
+         width: 60%;
+         color: black;
+         padding: 1.5rem;
+         border-radius: 5%;
+     }
+
+    .accent{
+         color: #D06136;
+     }
+
+     .parallax::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -1;
+    }
+
+    .parallax-2::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -4;
+    }
+  
+  .slideshow-top button a {
+      color: #EEE5DE;
+      font-size: 14px;
+  }
+
+  input{
+    border: none;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 2%;
+    padding: 1rem;
+  }
+
+  label{
+      font-size: 13px;
+      font-family: 'modum';
+  }
+
+  .contact a{
+      font-size: 13px;
+      color: #D06136;
+      font-family: 'bw_modelicabold';
+  }
+
+  textarea{
+      border: none;
+  }
+
+  .container-container{
+    margin-top: -9rem;
+    margin: 8rem;
+  }
+
+  .links{
+    display: grid;
+    justify-items: start;
+    align-items: end;
+    justify-content: end;
+    padding-right: 3rem;
+  }
+
+  .links i{
+      padding-bottom: .5rem;
+  }
+
+  .section-top{
+      margin-top: -7rem;
+  }
+    
+    </style>
+</head>
+<body >
+    <main id="top" data-aos="fade-in">
+        <header>
+            <nav>
+                <a id="link1" href="#about">About</a>
+                <a id="link2" href="#submit">Submissions</a>
+                <a id="home" href="#top"><img src="./images/black-logo.png" alt=""></a>
+            </nav>
+            <div class="links">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </header>
+        <section class="section section-top parallax">
+            <img class="watermark parallax" src="./images/220317_NewVernacular_TrademarkLogoLarge_White (1).png" alt="">
+          
+
+            <div class="heading">
+                <p data-aos="fade-in"
+                data-aos-delay="150"
+                data-aos-duration="1000">The contemporary reinterpretation of vernacular traditions and techniques.</p>
+            </div>
+
+            <div class="slideshow-top">
+                <button id="see"><a href="#explore">Explore</a><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="controls"><i class="fa-solid fa-arrow-left"></i> <i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+
+            <div id="slideshow-example" class="slideshow" data-component="slideshow">
+                <div role="list">
+                    <div data-aos="fade-in" class="slide fade-in-image">
+                        <img src="./images/feature_01.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-in" class="slide fade-in-image">
+                        <img src="./images/ateliernomadic-playaviva-kevin-steele-10.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-in" class="slide fade-in-image">
+                        <img src="./images/casa-de-piedra-alberto-tonconogy-asociados-c-luis-abba-3-ok.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="caption">
+                <p>Stone House Estudio Alberto Tonconogy y Asociados</p>
+            </div>
+
+        </section>
+
+        <section id="explore" class="section parallax about">
+            <img class="watermark-2" src="./images/220317_NewVernacular_TrademarkLogoLarge_White (1).png" alt="">
+            <div class="left">
+                <p data-aos="fade-right"
+                data-aos-delay="150"
+                data-aos-duration="1000">The most inspiring movement in architecture is the <span class="accent">revival of vernacular practices</span>, and their reintegration into the mainstream of contemporary architecture.</p>
+            </div>
+            <div class="middle parallax"></div>
+            
+            <div class="right">
+                <img data-aos="fade-left" class="parallax" src="./images/1.jpg" alt="">
+                <p data-aos="fade-in">New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.
+                </p>
+            </div>
+        </section>
+        
+         <section id="about" class="section parallax"> 
+      
+          <div class="about-container">
+
+
+            <div data-aos="fade-in" class="connect">
+                <h2>Connect</h2>
+                <p>We connect African, Latin American, and Southeast Asian culture 
+                   with the western world.</p>
+            </div>
+
+            <div data-aos="fade-in" class="discover">
+                <h2>Discover</h2>
+                <p>We showcase the works of architects, designers, and artists 
+                   who typically don’t get exposure in popular culture or mainstream platforms.</p>
+            </div>
+
+            <div data-aos="fade-in" class="rewrite">
+                <h2>Rewrite</h2>
+                <p>We believe that our platform will become a tool to rewrite the 
+                    narrative of mainstream design.</p>
+            </div>
+
+
+
+          </div>
+        </section>
+
+        <div class="container-container">
+            <section data-aos="fade-in" class="section about-2">
+            </section>
+        </div>
+     
+
+        <section id="submit" class="section parallax feature">
+           
+            <div class="left">
+                <img data-aos="fade-in" class="parallax" src="./images/falls.png" alt="">
+            </div>
+            <div class="right">
+                <div class="contact">
+                    <h2>Contact Us</h2>
+
+                <p>If you'd like your project to featured on New Vernacular, visit our <a href="#"> submissions page </a> to review the guidelines </p>
+                <p> For general inquiries or brand partnerships and advertising, fill out the following form: </p>
+               
+
+                <form action="submit">
+                   
+                    <span style="display:grid; grid-template-columns: 1fr 1fr;">
+                        <div>
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                        </div>
+           
+                        <div>
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                        </div>
+
+                    </span>
+                    <span style="display:grid; grid-template-columns: 2fr 1fr;">
+                    <label for="fname">Email* :</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+
+                    <label for="fname">Phone:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </span>
+
+                    <label for="fname">Message:</label><br>
+                    <textarea name="comment" form="usrform"></textarea>
+                  
+                    <br>
+                    <input type="submit" value="Submit">
+
+                </form>
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+    <footer></footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 150, // values from 0 to 3000, with step 50ms
+        duration: 1400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+</html>
