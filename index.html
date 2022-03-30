@@ -160,11 +160,14 @@
 
         nav{
             color: black;
-            justify-content: end;
             z-index: 30;
             padding: 2rem;
-            text-align: right;
             position: sticky;
+            display: flex;
+            justify-content: space-between;
+            background-color: #EEE5DE;
+            margin-left: 3rem;
+            margin-right: 3rem;
         }
 
 
@@ -360,7 +363,7 @@
 
 
      nav img{
-        width: 241px;
+        width: 346px;
      }
 
      nav a{
@@ -403,8 +406,8 @@
 
      .heading p {
          font-family: 'bw_modelicabold';
-         font-size: 37px;
-         width: 585px;
+         font-size: 30px;
+         width: 525px;
          padding-left: 11.875rem;
      }
 
@@ -417,7 +420,7 @@
      .slideshow{
          display: grid;
          place-items: center;
-         margin-top: -25px;
+         margin-top: -50px;
          z-index: 1;
      }
      .slideshow img{
@@ -436,7 +439,7 @@
          z-index: 2;
          font-family: 'modum';
          display: grid;
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 3fr 1fr;
          place-items: center;
      }
 
@@ -589,10 +592,10 @@
         opacity: 77%;
      }
      .about-container p{
-         padding: 0;
-         font-family: 'bw_modelicabold';
-         font-size: 13px;
-         line-height: 1.4rem;
+        padding: 0;
+        font-family: 'bw_modelicaregular';
+        font-size: 17px;
+        line-height: 2.4rem;
      }
      .connect{
          margin-left: 12rem;
@@ -645,7 +648,7 @@
   
   .slideshow-top button a {
       color: #EEE5DE;
-      font-size: 14px;
+      font-size: 20px;
   }
 
   input{
@@ -677,19 +680,32 @@
   }
 
   .links{
-    display: grid;
+    display: flex;
     justify-items: start;
     align-items: end;
     justify-content: end;
-    padding-right: 3rem;
   }
 
   .links i{
       padding-bottom: .5rem;
   }
 
-  .section-top{
-      margin-top: -7rem;
+  .heading-container{
+      border: 1px solid white;
+      padding: 1rem;
+  }
+
+  .main-links{
+    display: flex;
+    align-items: flex-end;
+    margin-left: -200px;
+   
+    
+  }
+
+  .main-links a{
+    
+    font-size: 16px;
   }
     
     </style>
@@ -698,15 +714,20 @@
     <main id="top" data-aos="fade-in">
         <header>
             <nav>
-                <a id="link1" href="#about">About</a>
-                <a id="link2" href="#submit">Submissions</a>
                 <a id="home" href="#top"><img src="./images/black-logo.png" alt=""></a>
+               <div class="main-links">
+                    <a href="#home">Home</a>
+                    <a id="link1" href="#about">About</a>
+                    <a id="link2" href="#submit">Submissions</a>
+               </div>
+
+                <div class="links">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
             </nav>
-            <div class="links">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-facebook"></i>
-            </div>
+         
         </header>
         <section class="section section-top parallax">
             <img class="watermark parallax" src="./images/220317_NewVernacular_TrademarkLogoLarge_White (1).png" alt="">
@@ -765,19 +786,27 @@
 
 
             <div data-aos="fade-in" class="connect">
-                <h2>Connect</h2>
+                <div class="heading-container">
+                    <h2>Connect</h2>
+                </div>
+                
                 <p>We connect African, Latin American, and Southeast Asian culture 
                    with the western world.</p>
             </div>
 
             <div data-aos="fade-in" class="discover">
+                <div class="heading-container">
                 <h2>Discover</h2>
+                </div>
+
                 <p>We showcase the works of architects, designers, and artists 
                    who typically don’t get exposure in popular culture or mainstream platforms.</p>
             </div>
 
             <div data-aos="fade-in" class="rewrite">
+                <div class="heading-container">
                 <h2>Rewrite</h2>
+                </div>
                 <p>We believe that our platform will become a tool to rewrite the 
                     narrative of mainstream design.</p>
             </div>
