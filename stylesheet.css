@@ -1,24 +1,62 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 /* Backgrounds */
 
 section, body{background: #EEE5DE;}
 
+.preloader{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.preloader img{
+    width: 50%;
+}
+
+svg{
+    fill: white;
+    margin: 1rem;
+   
+}
+
+.foot{
+    display: flex;
+}
+
+footer .links{
+    margin-right: 2rem;
+}
 /* Navigation */
 
 header{
     position: sticky;
-    top: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    top: 2rem;
+}
+
+header img{
+    width: 346px;
+}
+
+nav{
+    color: black;
 }
 
 
 /* Semantic Styles */
 
-body{overflow-x: hidden; height: 100%;}
+body{overflow-x: hidden; 
+
+    height: 100%;}
 
 main{
     display: grid;
@@ -34,17 +72,50 @@ main{
     background-color: #EEE5DE;
 }
 
+/* Helper Classes */
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
 
 
 /* Typography */
 
 p{padding: 1rem;}
+
 a{
     color: black;
     text-decoration: none;
-    font-family: 'modum';
-    font-size: 2rem;
+    font-family: 'bw_modelicaregular';
+    font-size: 16px;
 }
+
+nav a{
+    margin-right: 1rem;
+}
+
+.accent{
+    border: 3px solid #D06136;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'bw_modelicabold';
+}
+.pre
+{
+    z-index: 4;
+}
+
+button a{
+    color: white;
+}
+
+
+
+
+
+
+
 
 [data-component="slideshow"] .slide {
 	display: none;
@@ -159,4 +230,421 @@ a{
     font-weight: normal;
     font-style: normal;
 
+}
+
+button, input[type="submit" i]{
+    background-color: black;
+    color: #EEE5DE;
+    border: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 200px;
+    z-index: 2;
+    font-family: 'modumbold';
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+}
+
+
+/*Section */
+section#top{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+section#top img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section#top p{
+    font-family: 'bw_modelicabold';
+    font-size: 33px;
+    text-align: right;
+    line-height: 52px;
+    width: 100%;
+}
+
+section#top .right{
+    display: grid;
+    justify-content: flex-end;
+    align-content: center;
+    justify-items: end;
+    margin-right: 2rem;
+}
+
+section#top button{
+    margin-right: 1rem;
+}
+
+
+p.small{
+    font-size: 16px !important;
+    line-height: 1.7rem !important;
+    font-family: 'bw_modelicaregular' !important;
+}
+
+section#explore{
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+}
+
+section#explore img{
+    justify-self: end;
+    width: 100%;
+}
+
+section#explore h1{
+    align-self: end;
+    color: black;
+    font-family: 'bw_modelicaregular';
+    margin: 6rem;
+    line-height: 39px;
+    width: 69%;
+    
+}
+
+section#explore .accent{
+    border: none;
+    color: #D06136;
+    padding: 0;
+}
+
+section#explore .left{
+    display: grid;
+    place-items: center;
+}
+
+section#about{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-family: 'bw_modelicaregular';
+}
+
+section#about h1, section#submit h1{
+    color:black; align-self: start;
+    font-family: 'bw_modelicabold';
+    justify-self: start;
+    font-size: 8rem;
+    opacity: 0.8;
+}
+
+section#about .left{
+    display: grid;
+    height: 100vh;
+    justify-items: end;
+    align-content: center;
+    margin-top: 10rem;
+}
+
+.heading-container h2{
+    font-family: 'bw_modelicabold';
+}
+
+section#about .right{
+    display: grid;
+    margin: 1rem;
+}
+
+section#about .about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    width: 82%;
+    gap: 2rem;
+    margin: 4rem;
+    align-content: center;
+}
+
+section#magazine {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+section#submit{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    place-items: center;
+    margin-left: -388px;
+}
+
+section#submit .left {
+    background-color: #EEE5DE;
+    display: grid;
+    padding: 2rem;
+    height: 100%;
+    align-items: end;
+    padding-bottom: 4rem;
+
+}
+
+.feature .left img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.feature .right{
+    height: 100vh;
+    background-color: #EEE5DE;
+    width: 75%;
+    display: grid;
+    align-content: center;
+    margin-top: 4rem;
+
+}
+
+label {
+    font-size: 13px;
+    font-family: 'modum';
+}
+
+input {
+    border: none;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.feature .right p{
+   font-family: 'bw_modelicabold';
+   padding: 1rem 0rem 1rem 0rem;
+    width: 85%;
+    font-size: 13px;
+
+}
+
+.feature .right h2{
+   font-family: 'bw_modelicabold';
+margin-bottom: 1rem;
+text-align: end;
+color: black;
+align-self: start;
+justify-self: start;
+font-size: 7rem;
+
+}
+
+footer{
+    background-color: black;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'bw_modelicaregular';
+    font-size: 12px;
+    color: #EEE5DE;
+    align-items: center;
+
+}
+
+ footer p{
+   margin: 1rem;
+}
+
+
+
+section#about .about p{
+    padding: 0;
+}
+
+
+.full-height{
+    height: 100vh;
+}
+
+form p {
+    font-family: 'bw_modelicaregular';
+    padding: 0;
+    font-size: 14px;
+    padding-bottom: 1rem;
+    line-height: 26px;
+}
+
+
+
+
+.index-3{
+    z-index: 3;
+}
+
+.submit-container {
+    display: grid;
+    width: 50%;
+}
+
+
+section#submit h1{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1273px){
+    header{
+        margin: 2rem;
+    }
+    
+    header img{
+        width: 346px;
+    }
+
+}
+
+@media only screen and (max-width: 757px){
+    header{
+        margin: 1rem;
+        position: relative;
+    }
+    
+    header img{
+        width: 250px;
+    }
+    .mobile{
+        width: 42%;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        place-content: center;
+        gap: 1rem;
+    }
+
+    .accent {
+        border: none;
+        border-bottom: 3px solid #D06136;
+    }
+
+    nav a{
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .logo{
+        margin: auto;
+    }
+
+    section#explore{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        margin-top: 4rem;
+        height: 100vh;
+        background-image: url('./images/1.jpg');
+    }
+
+    section#explore .left{
+        height: 70vh;
+    }
+
+    section#explore h1{
+        color: #EEE5DE;
+    }
+
+    section#explore img{
+        height: 40vh;
+    }
+
+    .image-1{
+        display: none;
+    }
+
+    section#about{
+        grid-template-columns: none;
+        height: 77vh;
+    }
+
+    section#about .left{
+        margin: 0;
+        justify-items: center;
+        height: auto;
+    }
+
+    section#about .about{
+        text-align: center;
+        font-size: .85rem;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        width: 50%;
+    }
+
+    
+
+    section#submit h1{
+        font-size: 6rem;
+        text-align: right;
+        justify-self: right;
+        margin-top: -327px;
+        display: block;
+    }
+
+    section#submit{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+        margin: 0;
+        height: 133vh;
+        
+    }
+
+    section#submit .right{
+        display: none;
+    }
+
+    form p{
+        text-align: center;
+        margin: 1rem;
+    }
+
+    section#ig{
+        margin-top: 20rem;
+    }
+
+    footer{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    footer .links{
+        margin: 0;
+        margin: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 1036px){
+
+    section#top{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    section#top p{
+        text-align: center;
+    }
+
+    section#top .right{
+        text-align: center;
+        place-items: center;
+        margin: 0;
+        padding: 2rem;
+    }
 }
