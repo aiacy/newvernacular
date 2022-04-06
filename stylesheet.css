@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* Backgrounds */
 
 section, body{background: #EEE5DE;}
@@ -524,6 +528,9 @@ section#submit h1{
         grid-template-rows: 1fr 1fr;
         place-content: center;
         gap: 1rem;
+        position: initial;
+        margin-bottom: 2rem;
+        
     }
 
     .accent {
@@ -567,7 +574,7 @@ section#submit h1{
 
     section#about{
         grid-template-columns: none;
-        height: 77vh;
+        height: 100vh;
     }
 
     section#about .left{
@@ -584,6 +591,9 @@ section#submit h1{
         width: 50%;
     }
 
+    section#magazine{
+        height: 100vh;
+    }
     
 
     section#submit h1{
