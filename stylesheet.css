@@ -561,20 +561,24 @@ section#submit h1{
         grid-template-columns: none;
         margin-top: 4rem;
         height: 100vh;
-        background-image: url('./images/1.jpg');
+        background-image: url('./images/maybe.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     section#explore .right{
         z-index: 3;
+        margin-top: -52px;
     }
 
     section#explore .left{
         height: 70vh;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.7);
     }
 
     section#explore h1{
         color: #EEE5DE;
+        margin-bottom: 10rem;
     }
 
     section#explore img{
