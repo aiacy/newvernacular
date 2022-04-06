@@ -570,6 +570,7 @@ section#submit h1{
 
     section#explore .left{
         height: 70vh;
+        background: rgba(0, 0, 0, 0.5);
     }
 
     section#explore h1{
@@ -609,6 +610,7 @@ section#submit h1{
 
     section#magazine{
         height: 100vh;
+        margin-top: -12rem;
     }
     
 
