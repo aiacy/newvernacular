@@ -27,6 +27,7 @@ $(document).ready(function () {
 
 
 
+
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
 

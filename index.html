@@ -99,7 +99,7 @@
         #about{
             display: grid;
             place-items: center;
-            margin-bottom: -225px;
+            height: 100vh;
         }
 
 
@@ -160,14 +160,14 @@
 
         nav{
             color: black;
-            z-index: 30;
-            padding: 2rem;
+            z-index: 1;
             position: sticky;
             display: flex;
             justify-content: space-between;
             background-color: #EEE5DE;
-            margin-left: 3rem;
-            margin-right: 3rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-top: 2rem;
         }
 
 
@@ -348,13 +348,15 @@
 
      form{
          margin-top: 1rem;
-         width: fit-content;
+         width: min-content;
      }
 
      footer{
-         width: 100%;
-         background-color: black;
-         padding: 3rem;
+        background-color: black;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
      }
 
      footer a{
@@ -369,6 +371,7 @@
      nav a{
          font-size: 13px;
          padding-right: 1rem;
+         margin: .5rem
      }
 
      .watermark{
@@ -408,12 +411,14 @@
          font-family: 'bw_modelicabold';
          font-size: 30px;
          width: 525px;
-         padding-left: 11.875rem;
+         padding-left: 41.875rem;
+         margin-top: 2rem;
+         text-align: right;
      }
 
      .slideshow-top{
          display: flex;
-         justify-content: space-between;
+         justify-content: flex-end;
          margin: 0 12rem 0rem 4rem;
      }
 
@@ -429,7 +434,7 @@
        
      }
 
-     button{
+     button, input[type="submit" i]{
          background-color: black;
          color: #EEE5DE;
          border: none;
@@ -437,10 +442,10 @@
          border-radius: 2rem;
          width: 200px;
          z-index: 2;
-         font-family: 'modum';
+         font-family: 'modumbold';
          display: grid;
-         grid-template-columns: 3fr 1fr;
          place-items: center;
+         margin-top: 1rem;
      }
 
      .caption{
@@ -474,6 +479,7 @@
         background-color: #EEE5DE;
         display: grid;
         padding: 2rem;
+        margin-left: -132px;
      }
 
      .middle{
@@ -485,7 +491,7 @@
         background-position: center;
         background-repeat: no-repeat;
         width: auto;
-        height: auto;
+        height: 73.3%;
         background-size: contain;
         perspective: 3px;
         
@@ -497,18 +503,6 @@
          
      }
 
-
-
-     .right{
-        background-color: #EEE5DE;
-        display: grid;
-        justify-items: end;
-        align-items: end;
-        margin: 9rem 0rem 1rem -3rem;
-        width: 90%;
-        align-content: center;
-     }
-
      .right img{
          width: 100%;
          height: auto;
@@ -518,7 +512,7 @@
         width: 377px;
         font-size: 32px;
         font-family: 'bw_modelicaregular';
-        margin-top: 9rem;
+        margin-top: 4.3rem;
         margin-left: 4rem;
         z-index: 2;
      }
@@ -529,6 +523,8 @@
          font-family: 'bw_modelicabold';
          z-index: 2;
          padding-left: 0;
+         text-align: right;
+         line-height: 1.7rem;
          
      }
 
@@ -553,9 +549,10 @@
 
      .feature{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 100vh;
-        place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 120vh;
+    place-items: center;
+    margin-left: -388px;
      }
 
      .feature .left img{
@@ -565,11 +562,13 @@
      }
 
      .feature .right{
-        justify-items: flex-start;
-        align-content: center;
-        height: 100vh;
-        background-color: #EEE5DE;
-        width: 75%;
+    justify-items: flex-start;
+    align-content: center;
+    height: 100vh;
+    background-color: #EEE5DE;
+    width: 75%;
+    display: grid;
+
      }
 
      .feature .right p{
@@ -581,8 +580,14 @@
      }
 
      .feature .right h2{
-        font-family: 'modum'; 
-        margin-bottom: 1rem;
+        font-family: 'bw_modelicabold';
+    margin-bottom: 1rem;
+    text-align: end;
+    color: black;
+    align-self: start;
+    justify-self: start;
+    font-size: 7rem;
+   
      }
      .about-container h2{
         font-family: 'bw_modelicaregular';
@@ -598,24 +603,15 @@
         line-height: 2.4rem;
      }
      .connect{
-         margin-left: 12rem;
-         color: black;
-         padding: 1.5rem;
-         border-radius: 5%;
+  
      }
      
      .rewrite{
-         margin-right: 12rem;
-         color: black;
-         padding: 1.5rem;
-         border-radius: 5%;
+
      }
 
      .discover{
-         width: 60%;
-         color: black;
-         padding: 1.5rem;
-         border-radius: 5%;
+
      }
 
     .accent{
@@ -623,7 +619,7 @@
      }
 
      .parallax::after {
-        content: " ";
+    
         position: absolute;
         top: 0;
         right: 0;
@@ -655,8 +651,8 @@
     border: none;
     margin-right: .5rem;
     margin-bottom: 1rem;
-    border-radius: 2%;
     padding: 1rem;
+    border-radius: 0.5rem;
   }
 
   label{
@@ -669,6 +665,8 @@
       color: #D06136;
       font-family: 'bw_modelicabold';
   }
+
+  
 
   textarea{
       border: none;
@@ -691,99 +689,308 @@
   }
 
   .heading-container{
-      border: 1px solid white;
+      font-family: 'bw_modelicabold';
       padding: 1rem;
+      text-transform: uppercase;
   }
 
   .main-links{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-left: -200px;
+    
    
     
   }
 
   .main-links a{
-    
+    font-family: 'bw_modelicaregular';
     font-size: 16px;
   }
+
+  section.head-test{
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+  }
+
+  .head-test img{
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      margin-top: -7rem;
+  }
+
+  .head-test .left{
+      padding: 0;
+  }
+
+  .head-test .right{
+    display: grid;
+    margin: 4rem;
+    height: 70%;
+    align-content: center;
+    justify-items: end;
+ }
+
+  .preloader{
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      width: 100%;
+  }
+
+  .head-test .right p{
+    font-family: 'bw_modelicabold';
+    font-size: 33px;
+    text-align: right;
+    line-height: 52px;
+    width: 100%;
+
+  }
+
+  .head-test .right p.small{
+      font-size: 16px;
+      line-height: 1.7rem;
+      font-family: 'bw_modelicaregular';
+  }
+  
+
+  .main-links a{
+      margin-right: 1rem;
+  }
+
+  .main-links a.submit{
+      border: 3px solid #D06136;
+      padding: 1rem;
+      text-align: center;
+      font-family: 'bw_modelicabold';
+  }
+
+  section.explore-more{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    align-items: end;
+  }
+
+  section.explore-more h1{
+    align-self: end;
+    color: black;
+    font-family: 'bw_modelicaregular';
+    margin: 4rem;
+    line-height: 39px;
+    width: 55%;
+  }
+
+  section.explore-more img{
+      justify-self: end;
+      margin: 4rem;
+      width: 100%;
+      margin-top: -9rem;
+  }
+
+  .aboutish .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      font-family: 'bw_modelicaregular';
+      margin: 2rem;
+  }
+
+  .aboutish .left{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 19rem;
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .aboutish .right{
+    width: 65%;
+    height: auto;
+    margin-left: 11rem;
+  }
+
+  .something{
+    display: grid;
+    justify-items: center;
+  }
+  .connect{
+  
+}
+
+.rewrite{
+
+}
+
+.discover{
+
+}
     
+.heroish{
+    display: grid;
+    margin: 4rem;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.heroish img{
+    width: 60%;
+    height: auto;
+}
+.feature .pic img{
+    width: 100%;
+    height: auto;
+    margin-left: -47px;
+}
+
+.submit-container{
+    display: grid;
+    
+}
+
+.instructions{
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pic{
+    display: grid;
+    height: 100%;
+}
+
+form p{
+    font-family: 'bw_modelicaregular';
+    padding: 0;
+    font-size: 14px;
+    padding-bottom: 1rem;
+    line-height: 26px;
+    
+}
+
+i{
+    color: #EEE5DE;
+}
+
+.foot{
+    display: flex;
+    color: white;
+}
+
+form a{
+    font-family: 'bw_modelicabold';
+    font-size: 14px;
+}
+
+section#submit .left{
+    background-color: #EEE5DE;
+    display: grid;
+    padding: 2rem;
+    height: 100%;
+    margin-left: -132px;
+    align-items: center;
+    margin-top: -90px;
+}
+
+@media only screen and (min-width: 768px) {
+    .preloader img{
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  header{
+      z-index: 4;
+  }
+}
+
+
+
     </style>
 </head>
 <body >
-    <main id="top" data-aos="fade-in">
+    <main id="preloader" data-aos="fade-in">
+         <div class="preloader">
+            <img style="width: 50%;height: auto;" src="./images/black-logo.png" alt="">
+         </div>
+
+    
         <header>
             <nav>
-                <a id="home" href="#top"><img src="./images/black-logo.png" alt=""></a>
+            
+                <a href="#top"><img src="./images/black-logo.png" alt=""></a>
                <div class="main-links">
-                    <a href="#home">Home</a>
+                    <a id="home" href="#top">Home</a>
                     <a id="link1" href="#about">About</a>
-                    <a id="link2" href="#submit">Submissions</a>
+                    <a id="link2" class="submit" href="#submit">Submit</a>
                </div>
 
-                <div class="links">
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
+           
             </nav>
          
         </header>
-        <section class="section section-top parallax">
-            <img class="watermark parallax" src="./images/220317_NewVernacular_TrademarkLogoLarge_White (1).png" alt="">
-          
 
-            <div class="heading">
-                <p data-aos="fade-in"
-                data-aos-delay="150"
-                data-aos-duration="1000">The contemporary reinterpretation of vernacular traditions and techniques.</p>
-            </div>
+        <section id="top" class="head-test">
 
-            <div class="slideshow-top">
-                <button id="see"><a href="#explore">Explore</a><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="left">
+                <!-- 
                 <div class="controls"><i class="fa-solid fa-arrow-left"></i> <i class="fa-solid fa-arrow-right"></i></div>
-            </div>
+                <div class="caption">
+                    <p>Stone House Estudio Alberto Tonconogy y Asociados</p>
+                </div>
+                -->
 
-            <div id="slideshow-example" class="slideshow" data-component="slideshow">
-                <div role="list">
-                    <div data-aos="fade-in" class="slide fade-in-image">
-                        <img src="./images/feature_01.jpg" alt="">
-                    </div>
-                    <div data-aos="fade-in" class="slide fade-in-image">
-                        <img src="./images/ateliernomadic-playaviva-kevin-steele-10.jpg" alt="">
-                    </div>
-                    <div data-aos="fade-in" class="slide fade-in-image">
-                        <img src="./images/casa-de-piedra-alberto-tonconogy-asociados-c-luis-abba-3-ok.jpg" alt="">
-                    </div>
+
+
+                <div id="slideshow-example" class="slideshow" data-component="slideshow">
+                    <img src="./images/feature_01.jpg" alt="">
                 </div>
             </div>
 
-            <div class="caption">
-                <p>Stone House Estudio Alberto Tonconogy y Asociados</p>
-            </div>
-
-        </section>
-
-        <section id="explore" class="section parallax about">
-            <img class="watermark-2" src="./images/220317_NewVernacular_TrademarkLogoLarge_White (1).png" alt="">
-            <div class="left">
-                <p data-aos="fade-right"
-                data-aos-delay="150"
-                data-aos-duration="1000">The most inspiring movement in architecture is the <span class="accent">revival of vernacular practices</span>, and their reintegration into the mainstream of contemporary architecture.</p>
-            </div>
-            <div class="middle parallax"></div>
-            
             <div class="right">
-                <img data-aos="fade-left" class="parallax" src="./images/1.jpg" alt="">
-                <p data-aos="fade-in">New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.
-                </p>
+                <p data-aos="fade-in"
+                data-aos-delay="150"
+                data-aos-duration="1000">The contemporary reinterpretation of vernacular traditions and techniques.</p>
+                <p class="small">New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.</p>
+                <button>
+                    Explore More
+                </button>
             </div>
+            
         </section>
-        
-         <section id="about" class="section parallax"> 
-      
-          <div class="about-container">
+        <!--End of test section -->
 
+
+
+        <!-- new test-->
+        <section class="explore-more">
+            <div class="leftie">
+                <img style="width: 70%;" data-aos="fade-left" class="parallax" src="./images/1.jpg" alt="">
+                <h1>The most inspiring movement in architecture is the <span class="accent">revival of vernacular practices</span>, and their reintegration into the mainstream of contemporary architecture.</h1>
+            </div>
+            
+            <img src="./images/espacio18-masea-2021-4-of-6.jpg" alt="">
+        </section>
+
+        <!-- end -->
+
+        <!-- New test -->
+        <section id="about" class="aboutish">
+
+            <div class="container">
+                <div class="something">
+                    <h1 style="color:black; align-self: start;
+                    justify-self: start;
+                    font-size: 8rem;opacity: 0.8;">About</h1>
+                
+                <div class="left">
 
             <div data-aos="fade-in" class="connect">
                 <div class="heading-container">
@@ -803,6 +1010,7 @@
                    who typically don’t get exposure in popular culture or mainstream platforms.</p>
             </div>
 
+
             <div data-aos="fade-in" class="rewrite">
                 <div class="heading-container">
                 <h2>Rewrite</h2>
@@ -810,33 +1018,80 @@
                 <p>We believe that our platform will become a tool to rewrite the 
                     narrative of mainstream design.</p>
             </div>
-
-
-
-          </div>
+        </div>
+                </div>
+                <div class="right">
+                    <img src="./images/img-9893-ok.jpg" alt="">
+                </div>
+            </div>
         </section>
 
-        <div class="container-container">
-            <section data-aos="fade-in" class="section about-2">
-            </section>
-        </div>
-     
+        <!-- end -->
 
-        <section id="submit" class="section parallax feature">
+        <!-- New -->
+        <section class="heroish">
+
+            <img style="z-index: 3;" data-aos="fade-in" class="parallax" src="./images/falls.png" alt="">
+            <img src="./images/espacio18-masea-2021-4-of-6.jpg" data-aos="fade-in"
+            data-aos-delay="1350"
+            data-aos-duration="1000" alt="" style="
+        position: relative;
+    width: 20%;
+    margin-top: -350px;
+    margin-left: 1180px;
+">
+            
+        </section>
+
+        <!-- End-->
+
+       <!--
+        <section id="explore" class="section parallax about">
+           -->
+            <!-- 
+            <div class="links">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+
+        -->
+
+
+<!--
+            <div class="left">
+                <p data-aos="fade-right"
+                data-aos-delay="150"
+                data-aos-duration="1000">The most inspiring movement in architecture is the <span class="accent">revival of vernacular practices</span>, and their reintegration into the mainstream of contemporary architecture.</p>
+                <img style="width: 50%; padding-left: 4rem;" data-aos="fade-left" class="parallax" src="./images/1.jpg" alt="">
+            </div>
+            
+            <div class="middle parallax"></div>
+            
+            <div class="right">
+                <img data-aos="fade-left" class="parallax" src="./images/1.jpg" alt="">
+      
+            </div>
+        </section>
+        -->
+
+
+        <section id="submit" class="section feature">
+
+            <div class="pic">
+                <img data-aos="fade-in"
+                data-aos-delay="150"
+                data-aos-duration="1000" src="./images/cpn-centralayutthaya-22.jpg" alt="">
+            </div>
            
             <div class="left">
-                <img data-aos="fade-in" class="parallax" src="./images/falls.png" alt="">
-            </div>
-            <div class="right">
-                <div class="contact">
-                    <h2>Contact Us</h2>
-
-                <p>If you'd like your project to featured on New Vernacular, visit our <a href="#"> submissions page </a> to review the guidelines </p>
-                <p> For general inquiries or brand partnerships and advertising, fill out the following form: </p>
-               
-
+                <div class="submit-container">  
+              
                 <form action="submit">
+                    <p>If you'd like your project to featured on New Vernacular, visit our <a href="#"> submissions page </a> to review the guidelines </p>
+                    <p> For general inquiries or brand partnerships and advertising, fill out the following form: </p>
                    
+    
                     <span style="display:grid; grid-template-columns: 1fr 1fr;">
                         <div>
                             <label for="fname">First name:</label><br>
@@ -845,33 +1100,62 @@
            
                         <div>
                             <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname"><br>
+                            <input style="width: 81%;" type="text" id="fname" name="fname"><br>
                         </div>
 
                     </span>
-                    <span style="display:grid; grid-template-columns: 2fr 1fr;">
-                    <label for="fname">Email* :</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <span style="display:grid;">
+                    <label for="fname">Email* :</label>
+                    <input type="text" id="fname" name="fname">
 
-                    <label for="fname">Phone:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <label for="fname">Phone:</label>
+                    <input type="text" id="fname" name="fname">
                 </span>
 
-                    <label for="fname">Message:</label><br>
-                    <textarea name="comment" form="usrform"></textarea>
+                    <label for="fname">Message:</label>
+                    <textarea style="width: 433px;
+                    height: 128px;" name="comment" form="usrform"></textarea>
                   
-                    <br>
+                    
                     <input type="submit" value="Submit">
 
                 </form>
+
+                <div class="instructions">
+                   
+                </div>
+            </div>
+            </div>
+            <div class="right">
+                <div class="contact" style="margin-top: -69px;">
+                    <h2 style="opacity: 0.8;">Contact Us</h2>
+                    <img data-aos="fade-in"
+                    data-aos-delay="150"
+                    data-aos-duration="1000" src="./images/espacio18-masea-2021-4-of-6.jpg" alt="">
                 </div>
                 
             </div>
         </section>
-        
-    </main>
-    <footer></footer>
+        <!--
+        <section>
+            <div id="pixlee_container"></div>
 
+        </section> -->
+        <footer>
+            <div class="foot">
+                <p>New Vernacular</p>
+                <p>Made with love by Aliyah</p>
+            </div>
+            <div class="links">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+        </footer>
+    </main>
+
+   
+   <!-- <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'7Z97uh72XgEBk-rjYGc_'});Pixlee.addSimpleWidget({widgetId:'36195'});};</script><script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
