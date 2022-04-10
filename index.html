@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>New Venacular</title>
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -21,10 +21,11 @@
         <!-- Header -->
         <header data-aos="fade-in"
         data-aos-delay="150"
-        data-aos-duration="1000">
+        data-aos-duration="1000" style="z-index: 4;">
             <div class="logo">
-                <a href="#top"><img class="responsive" src="./images/black-logo.png" alt=""></a>
+                <a href="#top"><img class="responsive" src="./images/white-logo.png" alt=""></a>
             </div>
+            <hr>
             <nav>
                 <a id="home" href="#top">Home</a>
                 <a id="link1" href="#about">About</a>
@@ -41,7 +42,7 @@
                 <p data-aos="fade-in"
                 data-aos-delay="150"
                 data-aos-duration="1000">The contemporary reinterpretation of vernacular traditions and techniques.</p>
-                <p class="small">New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.</p>
+                <p class="small">The most inspiring movement in architecture is the revival of vernacular practices, and their reintegration into the mainstream of contemporary architecture.</p>
                 <button>
                     <a href="#explore">Explore More</a> 
                 </button>
@@ -52,7 +53,7 @@
         <section id="explore">
             <div class="left">
                 <img style="width: 70%; margin: auto;object-fit: cover;height: 360px;" data-aos="fade-left" class="parallax responsive image-1" src="./images/maybe.jpg" alt="">
-                <h1>The most inspiring movement in architecture is the <span class="accent">revival of vernacular practices</span>, and their reintegration into the mainstream of contemporary architecture.</h1>
+                <h1>New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.</h1>
             </div>
             <div class="right">
                 <img data-aos="fade-in"
@@ -132,26 +133,26 @@
                     <span style="display:grid; grid-template-columns: 1fr 1fr;">
                         <div>
                             <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname"><br>
+                            <input type="text" id="fname" name="fname" placeholder="First name"><br>
                         </div>
            
                         <div>
-                            <label for="fname">First name:</label><br>
-                            <input style="width: 81%;" type="text" id="fname" name="fname"><br>
+                            <label for="fname">Last name:</label><br>
+                            <input style="width: 81%;" type="text" id="fname" name="fname" placeholder="Last name"><br>
                         </div>
 
                     </span>
                     <span style="display:grid;">
                     <label for="fname">Email* :</label>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" placeholder="Email">
 
                     <label for="fname">Phone:</label>
-                    <input type="text" id="fname" name="fname">
+                    <input type="text" id="fname" name="fname" placeholder="Phone">
                 </span>
 
                     <label for="fname">Message:</label>
                     <textarea style="width: 433px;
-                    height: 128px;" name="comment" form="usrform"></textarea>
+                    height: 128px;" name="comment" form="usrform" placeholder="Add your message here"></textarea>
                   
                     
                     <input type="submit" value="Submit">
@@ -173,6 +174,11 @@
                 
             </div>
         </section>
+
+        <div class="instagram">
+            
+        </div>
+
         <footer>
             <div class="foot">
                 <p>©2022 New Vernacular</p>
@@ -199,7 +205,8 @@
         </footer>
        
     </main>
-    <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'7Z97uh72XgEBk-rjYGc_'});Pixlee.addSimpleWidget({widgetId:'36195'});};</script><script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+    <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+    <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'7Z97uh72XgEBk-rjYGc_'});Pixlee.addSimpleWidget({widgetId:'36195'});};</script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -230,3 +237,4 @@
     </script>
 </body>
 </html>
+
