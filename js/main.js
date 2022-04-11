@@ -26,7 +26,11 @@ $(document).ready(function () {
 		});
 
 
-
+var darkLogo = document.getElementById('dark-logo')
+var finishAnimation = document.querySelector('.loader');
+finishAnimation.onanimationend = () => {
+	darkLogo.classList.add('hidden');
+}
 
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);

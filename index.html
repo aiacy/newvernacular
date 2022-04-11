@@ -12,10 +12,11 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
-    <main data-aos="fade-in">
+    <main>
         <!-- Preloader -->
         <section class="preloader">
-            <img class="responsive" src="./images/black-logo.png" alt="">
+            <img class="responsive" src="./images/white-logo.png" alt="">
+            <img id="dark-logo" class="responsive secondLogo loader" src="./images/black-logo.png" alt="">
         </section>
 
         <!-- Header -->
@@ -23,9 +24,12 @@
         data-aos-delay="150"
         data-aos-duration="1000" style="z-index: 4;">
             <div class="logo">
-                <a href="#top"><img class="responsive" src="./images/white-logo.png" alt=""></a>
+                <a href="#top">
+                    <img class="responsive" src="./images/white-logo.png" alt="">
+                    <img class="responsive dark-logo" src="./images/black-logo.png"  alt="">
+                </a>
+                
             </div>
-            <hr>
             <nav>
                 <a id="home" href="#top">Home</a>
                 <a id="link1" href="#about">About</a>
@@ -53,7 +57,7 @@
         <section id="explore">
             <div class="left">
                 <img style="width: 70%; margin: auto;object-fit: cover;height: 360px;" data-aos="fade-left" class="parallax responsive image-1" src="./images/maybe.jpg" alt="">
-                <h1>New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.</h1>
+                <p class="small">New Vernacular will showcase this synthesis by highlighting projects that successfully reinterpret vernacular forms, materials, and techniques.</p>
             </div>
             <div class="right">
                 <img data-aos="fade-in"
