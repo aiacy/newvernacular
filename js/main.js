@@ -25,13 +25,18 @@ $(document).ready(function () {
 		}, 2000);
 		});
 
+	
 
+
+//Loading animation
 var darkLogo = document.getElementById('dark-logo')
-var finishAnimation = document.querySelector('.loader');
+var finishAnimation = document.querySelector('.loader')
 finishAnimation.onanimationend = () => {
 	darkLogo.classList.add('hidden');
 }
 
+
+//Slide
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
 

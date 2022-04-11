@@ -36,13 +36,17 @@ section, body{background: #EEE5DE;}
     animation: fadeOut 3s;
 }
 
-.loader::after{
-    display: none;
-}
-
 .secondLogo{
     position: absolute;
    
+}
+
+
+.changeBlack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 .preloader img{
@@ -69,8 +73,10 @@ header{
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-    top: 2rem;
+    padding: 2rem;
+    padding-left: 3rem;
+    top: 0;
+    background-color: white;
 }
 
 header img{
