@@ -9,24 +9,23 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/094a0588c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/main.js"></script>
 </head>
 <body>
     <main>
         <!-- Preloader -->
-        <section class="preloader">
+        <section id="loader" class="preloader">
             <img class="responsive" src="./images/white-logo.png" alt="">
             <img id="dark-logo" class="responsive secondLogo loader" src="./images/black-logo.png" alt="">
         </section>
 
         <!-- Header -->
-        <header data-aos="fade-in"
-        data-aos-delay="150"
-        data-aos-duration="1000" style="z-index: 4;">
+        <header id="header">
             <div class="logo">
                 <a href="#top">
-                    <!-- <img class="responsive white-logo" src="./images/white-logo.png" alt=""> -->
-                    <img class="responsive scrollElement" src="./images/black-logo.png"  alt="">
+                    <img class="responsive white-logo" src="./images/white-logo.png" alt=""> 
+                    <img style="display: none;" class="responsive scrollElement" src="./images/black-logo.png"  alt="">
                 </a>
                 
             </div>
@@ -38,8 +37,8 @@
         </header>
 
         <!-- Top Section -->
-        <section id="top">
-            <div class="left index-3">
+        <section id="top" class="load-hidden">
+            <div class="left">
                 <img src="./images/feature_01.jpg" class="responsive" alt="">
             </div>
             <div class="right">
@@ -137,18 +136,18 @@
                     <span style="display:grid; grid-template-columns: 1fr 1fr;">
                         <div>
                             <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                            <input type="text" id="fname" name="fname" placeholder="First name" required><br>
                         </div>
            
                         <div>
                             <label for="fname">Last name:</label><br>
-                            <input style="width: 81%;" type="text" id="fname" name="fname" placeholder="Last name"><br>
+                            <input style="width: 81%;" type="text" id="fname" name="fname" placeholder="Last name" required><br>
                         </div>
 
                     </span>
                     <span style="display:grid;">
                     <label for="fname">Email* :</label>
-                    <input type="text" id="fname" name="fname" placeholder="Email">
+                    <input type="text" id="fname" name="fname" placeholder="Email" required>
 
                     <label for="fname">Phone:</label>
                     <input type="text" id="fname" name="fname" placeholder="Phone">
@@ -178,11 +177,12 @@
                 
             </div>
         </section>
+        <section id="social">
+            <div data-mc-src="5ba9b5d2-bfe5-42fb-9a67-5a744a6dc9b5#instagram"></div>
+        </section>
 
-        <div class="instagram">
-            
-        </div>
-
+        <section id="hide"></section>
+        
         <footer>
             <div class="foot">
                 <p>©2022 New Vernacular</p>
@@ -209,8 +209,13 @@
         </footer>
        
     </main>
-    <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
-    <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'7Z97uh72XgEBk-rjYGc_'});Pixlee.addSimpleWidget({widgetId:'36195'});};</script>
+    
+        
+<script 
+  src="https://cdn2.woxo.tech/a.js#625ad727aab45a002840e5a4" 
+  async data-usrc>
+</script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

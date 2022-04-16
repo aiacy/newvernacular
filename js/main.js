@@ -1,4 +1,6 @@
-$(document).ready(function () {
+$(function () {
+
+	
 	
 	$("#home").click(function() {
 		$('html, body').animate({
@@ -25,7 +27,41 @@ $(document).ready(function () {
 		}, 2000);
 		});
 
-	
+	$("header").scroll(function(){
+		$(this).css( "display","none");
+	});
+
+
+	var settings = {
+		delay: 375,
+		duration: 500,
+		reset: true,
+		viewOffset: {
+			top: 30,
+			right: 0,
+			bottom: 0,
+			left: 0,
+		}
+	};
+
+ScrollReveal().reveal('#loader',{
+	useDelay:'onload'
+});
+
+ScrollReveal().reveal('#top', settings);
+ScrollReveal().reveal('section#explore', settings);
+ScrollReveal().reveal('section#about', settings);
+ScrollReveal().reveal('section#submit', settings);
+ScrollReveal().reveal('section#social', settings);
+
+
+
+var viewport = document.querySelector('section#top')
+var output = document.querySelector('p.output')
+
+viewport.addEventListener('scroll', event => {
+	output.textContent = `Scroll top: ${viewport.scrollTop}`;
+});
 
 
 //Loading animation

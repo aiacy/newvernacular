@@ -16,6 +16,10 @@ body{
     max-width: 100%;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 /* Backgrounds */
 
 section, body{background: #EEE5DE;}
@@ -76,7 +80,7 @@ header{
     padding: 2rem;
     padding-left: 3rem;
     top: 0;
-    background-color: white;
+    background-color: transparent;
 }
 
 header img{
@@ -104,7 +108,7 @@ body{overflow-x: hidden;
 main{
     display: grid;
     width: 100%;
-    background-color: #EEE5DE;
+    background-color: white;
     perspective: 20px;
 }
 
@@ -300,6 +304,7 @@ section#top{
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-top: -98px;
 }
 
 section#top img{
@@ -337,16 +342,16 @@ p.small{
 }
 
 section#explore{
-    height: 100vh;
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: end;
+    margin: 4rem;
 }
 
 section#explore img{
-    justify-self: end;
     width: 100%;
+    height: auto;
 }
 
 section#explore h1{
@@ -372,6 +377,10 @@ section#explore .left{
     align-content: center;
 }
 
+section#explore .right{
+    margin: 3rem;
+}
+
 section#about{
     height: 100vh;
     display: grid;
@@ -382,9 +391,10 @@ section#about{
 }
 
 #explore .left p.small{
-    width: 74%;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    width: 75.5%;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+    text-align: left;
 }
 
 section#about h1, section#submit h1{
@@ -402,14 +412,19 @@ section#about h1{
 }
 
 section#about .left{
-    display: grid;
+    display: flex;
     height: 100vh;
-    justify-items: end;
+    align-items: center;
+    justify-content: center;
     align-content: center;
+    grid-template-rows: 1fr 3fr;
+    flex-direction: column;
+    margin-top: 4rem;
 }
 
 .heading-container h2{
     font-family: 'bw_modelicabold';
+    margin-bottom: 1rem;
 }
 
 section#about .right{
@@ -438,7 +453,6 @@ section#magazine {
 section#submit{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
     place-items: center;
     margin-left: -388px;
 }
@@ -453,10 +467,17 @@ section#submit .left {
 
 }
 
+section#hide{
+    background-color: white;
+    height: 40px;
+    margin-top: -10rem;
+    z-index: 100;
+}
+
 .feature .left img{
     width: 100%;
     height: auto;
-    z-index: 1;
+    
 }
 
 .feature .right{
@@ -497,7 +518,7 @@ text-align: end;
 color: black;
 align-self: start;
 justify-self: start;
-font-size: 7rem;
+font-size: 6rem;
 
 }
 
@@ -539,8 +560,8 @@ form p {
 
 
 
-.index-3{
-    z-index: 3;
+.index-4{
+    z-index: 4;
 }
 
 .submit-container {
@@ -554,6 +575,15 @@ section#submit h1{
 }
 
 
+section#social{
+    height: 100vh;
+    background-color: white;
+    margin: 4rem;
+}
+
+a.css-6kluu6{
+    display: none !important;
+}
 
 @media only screen and (max-width: 1273px){
     header{

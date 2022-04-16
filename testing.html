@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+        }
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            justify-content: center;
+            padding: 2rem;
+        }
+        section{
+            background-color: blueviolet;
+            padding: 1rem 3rem 1rem 3rem;
+            height: 100%;
+        }
+
+        header{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 1rem;
+            
+        }
+        
+    
+    </style>
+    <main>
+        <header>
+            <p>Nav</p> 
+        </header>
+        <aside>
+            <ul>
+                <li>Random</li>
+                <li>Links</li>
+                <li>Here</li>
+            </ul>
+        </aside>
+        <div class="container">
+            <section>
+                <section class="hero">Something cool goes here</section>
+                <section class="more">Something cooler goes here</section>
+            </section>
+        </div>
+        
+    </main>
+    
+</html>
