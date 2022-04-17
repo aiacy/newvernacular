@@ -1,7 +1,64 @@
-$(function () {
+let options = {
+	root: null,
+	threshold: 1
+};
 
+let ExploreCallback = (entries, observer) => {
 	
+
+	entries.forEach(entry => {
+		if (entry.isIntersecting = true){
+			entry.target.style.backgroundColor = '#EEE5DE;';
+		}
+	//   entry.boundingClientRect
+    //   entry.intersectionRatio
+    //   entry.intersectionRect
+    //   entry.isIntersecting
+    //   entry.rootBounds
+    //   entry.target
+    //   entry.time
+	});
+};
+
+
+let HeaderCallback = (entries, observer) => {
 	
+
+	entries.forEach(entry => {
+		if (entry.isIntersecting === true){
+			entry.target.style.backgroundColor = 'blue';
+			console.log('should be blue header');
+		} else {
+			entry.target.style.backgroundColor = 'white';
+			console.log('should be white header');
+		}
+	//   entry.boundingClientRect
+    //   entry.intersectionRatio
+    //   entry.intersectionRect
+    //   entry.isIntersecting
+    //   entry.rootBounds
+    //   entry.target
+    //   entry.time
+	});
+};
+
+let headerObserver = new IntersectionObserver(HeaderCallback, {root: document.querySelector('#top')});
+let headerTarget = document.querySelector('#header');
+
+headerObserver.observe(headerTarget);
+
+
+let observer = new IntersectionObserver(ExploreCallback, options);
+
+let exploreTarget = document.querySelector('#explore');
+
+observer.observe(exploreTarget);
+
+
+
+
+
+$(function () {
 	$("#home").click(function() {
 		$('html, body').animate({
 			scrollTop: $("#top").offset().top

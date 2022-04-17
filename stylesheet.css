@@ -291,7 +291,6 @@ button, input[type="submit" i]{
     border: none;
     padding: 1rem;
     width: 200px;
-    z-index: 2;
     font-family: 'modumbold';
     display: grid;
     place-items: center;
