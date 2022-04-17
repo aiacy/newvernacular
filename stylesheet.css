@@ -126,6 +126,12 @@ main{
     background-size: contain;
   }
 
+  .talk a{
+      font-family: 'bw_modelicabold';
+      font-size: inherit;
+      text-decoration: underline;
+  }
+
 
 
 /* Typography */
@@ -451,25 +457,25 @@ section#magazine {
 
 section#submit{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
     place-items: center;
-    margin-left: -388px;
+    
 }
 
 section#submit .left {
     background-color: #EEE5DE;
     display: grid;
-    padding: 2rem;
-    height: 100%;
-    align-items: end;
+    padding: 4rem;
     padding-bottom: 4rem;
+    width: 60%;
+    justify-content: center;
 
 }
 
 section#hide{
     background-color: white;
     height: 40px;
-    margin-top: -10rem;
+    margin-top: -6rem;
     z-index: 100;
 }
 
@@ -480,13 +486,9 @@ section#hide{
 }
 
 .feature .right{
-    height: 100vh;
     background-color: #EEE5DE;
-    width: 75%;
     display: grid;
     align-content: center;
-    margin-top: 4rem;
-
 }
 
 label {
@@ -502,22 +504,22 @@ input {
     border-radius: 0.5rem;
 }
 
-.feature .right p{
-   font-family: 'bw_modelicabold';
+.feature .left p{
+   font-family: 'bw_modelicaregular';
    padding: 1rem 0rem 1rem 0rem;
-    width: 85%;
-    font-size: 13px;
+   font-size: 13px;
+   line-height: 1.4rem;
 
 }
 
-.feature .right h2{
+.feature .left h2{
    font-family: 'bw_modelicabold';
 margin-bottom: 1rem;
-text-align: end;
+text-align: justify;
 color: black;
 align-self: start;
 justify-self: start;
-font-size: 6rem;
+font-size: 4rem;
 
 }
 
@@ -565,7 +567,6 @@ form p {
 
 .submit-container {
     display: grid;
-    width: 50%;
 }
 
 
@@ -575,7 +576,6 @@ section#submit h1{
 
 
 section#social{
-    height: 100vh;
     background-color: white;
     margin: 4rem;
 }
