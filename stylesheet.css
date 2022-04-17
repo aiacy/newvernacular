@@ -406,7 +406,7 @@ section#about h1, section#submit h1{
     color:black; align-self: start;
     font-family: 'bw_modelicabold';
     justify-self: start;
-    font-size: 6rem;
+    font-size: 5rem;
     opacity: 0.8;
 }
 
@@ -459,6 +459,7 @@ section#submit{
     display: grid;
     grid-template-columns:  1fr 1fr;
     place-items: center;
+    margin: 6rem;
     
 }
 
@@ -519,7 +520,7 @@ text-align: justify;
 color: black;
 align-self: start;
 justify-self: start;
-font-size: 4rem;
+font-size: 3rem;
 
 }
 
