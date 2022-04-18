@@ -124,9 +124,9 @@
                         <p>If you'd like your project to featured on New Vernacular, visit our <a href="#"> submissions page </a> to review the guidelines </p>
                         <p> For general inquiries or brand partnerships and advertising, fill out the following form: </p> 
                     </div>
-                    `
+                    
                     <form action="submit">
-                    <span style="display:grid; grid-template-columns: 1fr 1fr;">
+                    <span class="formrow">
                         <div>
                             <label for="fname">First name:</label><br>
                             <input type="text" id="fname" name="fname" placeholder="First name" required><br>
@@ -134,7 +134,7 @@
            
                         <div>
                             <label for="fname">Last name:</label><br>
-                            <input style="width: 81%;" type="text" id="fname" name="fname" placeholder="Last name" required><br>
+                            <input type="text" id="fname" name="fname" placeholder="Last name" required><br>
                         </div>
 
                     </span>
@@ -145,10 +145,11 @@
                     <label for="fname">Phone:</label>
                     <input type="text" id="fname" name="fname" placeholder="Phone">
                 </span>
-
+                    <span>
                     <label for="fname">Message:</label>
                     <textarea name="comment" form="usrform" placeholder="Add your message here"></textarea>
-
+                </span>
+                
                     <input type="submit" value="Submit">
 
                 </form>
