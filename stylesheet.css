@@ -861,6 +861,14 @@ hr{
     }
 }
 
+@media only screen and (max-width: 414px){
+main{
+    max-width: 414px;
+}
+    
+
+}
+
 @media only screen and (max-width: 390px){
     main{
         max-width: 390px;
