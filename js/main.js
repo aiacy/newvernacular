@@ -29,7 +29,7 @@ let HeaderCallback = (entries, observer) => {
 			entry.target.style.backgroundColor = 'blue';
 			console.log('should be blue header');
 		} else {
-			entry.target.style.backgroundColor = 'white';
+			entry.target.style.backgroundColor = '#EEE5DE';
 			console.log('should be white header');
 		}
 	//   entry.boundingClientRect

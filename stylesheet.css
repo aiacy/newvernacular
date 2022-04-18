@@ -620,14 +620,16 @@ a.css-6kluu6{
         grid-template-rows: 1fr 1fr;
         place-content: center;
         gap: 1rem;
-        position: initial;
+        position: sticky;
         margin: 0;
         margin-bottom: 2rem;
         max-width: inherit;
+        background-color: #EEE5DE;
     }
 
     section#top, section#explore, section#about{
         max-width: inherit;
+        height: auto;
     }
 
     .accent {
@@ -644,15 +646,34 @@ a.css-6kluu6{
         margin: auto;
     }
 
+    section#top{
+        background-color: #EEE5DE;
+        padding-top: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#top img {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
     section#top .right{
         width: auto;
+        padding: 0rem 2rem 2rem 2rem !important;
+    }
+
+    section#top p{
+        font-size: 21px;
+        line-height: 40px;
     }
 
     section#explore{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
-        margin-top: 4rem;
+        margin: 0;
         height: 100vh;
     }
 
@@ -662,8 +683,7 @@ a.css-6kluu6{
     }
 
     section#explore .left{
-        height: 70vh;
-        background: rgba(0, 0, 0, 0.7);
+        grid-template-rows: 1fr 1fr;
     }
 
     section#explore h1{
@@ -673,10 +693,6 @@ a.css-6kluu6{
 
     section#explore img{
         height: 40vh;
-    }
-
-    .image-1{
-        display: none;
     }
 
     section#about{
