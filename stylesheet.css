@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     margin: auto;
     padding: 0px;
+    overflow-x: hidden;
     }
 
 body{
@@ -678,6 +679,7 @@ input[type=text], select, textarea{
 @media only screen and (max-width: 500px) {
     main{
         max-width: 500px;
+        margin: auto;
     }
     header{
         display: grid;
