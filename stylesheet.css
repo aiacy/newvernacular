@@ -103,7 +103,6 @@ nav{
     color: black;
 }
 
-
 /* Semantic Styles */
 
 body{overflow-x: hidden; 
@@ -387,6 +386,14 @@ section#explore .left{
     align-content: center;
 }
 
+section#explore .left img{
+    width: 70%; 
+    margin: auto;
+    object-fit: cover;
+    height: 360px;
+
+}
+
 section#explore .right{
     margin: 3rem;
 }
@@ -564,13 +571,6 @@ form p {
     line-height: 26px;
 }
 
-
-
-
-.index-4{
-    z-index: 4;
-}
-
 .submit-container {
     display: grid;
 }
@@ -644,6 +644,14 @@ input[type=text], select, textarea{
     display: table;
     clear: both;
   }
+
+  @media only screen and (min-width: 500px){
+
+.mobile-caption{
+    display: none;
+}
+
+  }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -651,6 +659,7 @@ input[type=text], select, textarea{
       width: 100%;
       margin-top: 1rem;
     }
+
   }
 
 @media only screen and (max-width: 1273px){
@@ -680,13 +689,51 @@ input[type=text], select, textarea{
         max-width: 414px;
         margin: auto;
     }
+
+    .mobile-caption{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    section#explore{
+        background-color: white;
+        margin: 2rem;
+    }
+
+    section#explore .left{
+        margin: 0%;
+        height: auto;
+        background-color: #EEE5DE;
+    }
+
+    p.small{
+            font-size: 14px !important;
+    }
+    figcaption{
+        position: relative;
+        background-color: rgb(31, 30, 30);
+        color: white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -2rem;
+        padding: 1rem;
+        z-index: 3;
+        font-family: 'modum';
+        text-align: center;
+        font-size: 14px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
     header{
         display: grid;
         grid-template-rows: 1fr 1fr;
-        place-content: center;
         gap: 1rem;
         position: relative;
         margin: 0;
+        padding: 1rem;
         margin-bottom: 2rem;
         max-width: inherit;
         background-color: #EEE5DE;
@@ -728,25 +775,31 @@ input[type=text], select, textarea{
         max-width: 100%;
         height: auto;
         padding: 1rem;
+        border-radius: 28px;
+
     }
     section#top .right{
         width: auto;
-        padding: 0rem 2rem 2rem 2rem !important;
+        margin: 0;
+        padding: 1rem;
+        justify-items: start;
+    }
+
+    section#top .right p.caption{
+      display: none;
     }
 
     section#top p{
-        font-size: 21px;
-        line-height: 40px;
-    }
-
-    section#top p.small{
-        border: solid 2px white;
+        font-size: 25px;
+        line-height: 32px;
+        width: auto;
+        text-align: start;
+      
     }
 
     section#explore{
     grid-template-columns: none;
-    margin: 0;
-    padding-top: 4rem;
+    margin: 2rem;
     }
 
     section#explore .right{
@@ -754,7 +807,7 @@ input[type=text], select, textarea{
     }
 
     section#explore .left{
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr auto;
     }
 
     section#explore h1{
@@ -769,6 +822,7 @@ input[type=text], select, textarea{
     #explore .left p.small{
         text-align: center;
         border: solid 2px white;
+        margin: 2rem;
     }
 
     section#about{
@@ -903,6 +957,12 @@ input[type=text], select, textarea{
         align-self: center;
 
     }
+    
+    section#explore .left img{
+        width: 100%;
+        height: 360px;
+        margin: 0;
+    }
   
 
 }
@@ -914,15 +974,13 @@ input[type=text], select, textarea{
         grid-template-rows: 1fr 1fr;
     }
 
-    section#top p{
-        text-align: center;
-    }
+
 
     section#top .right{
         text-align: center;
         place-items: center;
         margin: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
