@@ -694,7 +694,7 @@ input[type=text], select, textarea{
 
 
     section#top, section#explore, section#about{
-        max-width: inherit;
+        max-width: 414px;
         height: auto;
     }
 
