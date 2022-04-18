@@ -697,6 +697,7 @@ input[type=text], select, textarea{
     section#top, section#explore, section#about{
         max-width: 414px;
         height: auto;
+        overflow-x: hidden;
     }
 
     .accent {
