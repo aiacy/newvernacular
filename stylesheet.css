@@ -611,15 +611,23 @@ a.css-6kluu6{
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+    main{
+        max-width: 500px;
+    }
     header{
         display: grid;
         grid-template-rows: 1fr 1fr;
         place-content: center;
         gap: 1rem;
         position: initial;
+        margin: 0;
         margin-bottom: 2rem;
-        
+        max-width: inherit;
+    }
+
+    section#top, section#explore, section#about{
+        max-width: inherit;
     }
 
     .accent {
@@ -636,15 +644,16 @@ a.css-6kluu6{
         margin: auto;
     }
 
+    section#top .right{
+        width: auto;
+    }
+
     section#explore{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
         margin-top: 4rem;
         height: 100vh;
-        background-image: url('./images/maybe.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
     }
 
     section#explore .right{
