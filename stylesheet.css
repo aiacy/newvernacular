@@ -63,6 +63,11 @@ svg{
    
 }
 
+textarea{
+    width: 545px;
+    height: 90px;
+}
+
 .foot{
     display: flex;
 }
@@ -646,8 +651,10 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     }
 
     section#top{
+        flex-direction: column;
         background-color: #EEE5DE;
-        padding-top: 3rem;
+        margin-top: -2rem;
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -666,6 +673,10 @@ box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     section#top p{
         font-size: 21px;
         line-height: 40px;
+    }
+
+    section#top p.small{
+        border: solid 2px white;
     }
 
     section#explore{
