@@ -476,7 +476,7 @@ section#submit .left {
 section#hide{
     background-color: white;
     height: 40px;
-    margin-top: -6rem;
+    margin-top: -3.4rem;
     z-index: 100;
 }
 
@@ -672,16 +672,16 @@ a.css-6kluu6{
     section#explore{
     grid-template-columns: none;
     margin: 0;
+    padding-top: 4rem;
     }
 
     section#explore .right{
         z-index: 3;
         margin: 0;
-        margin-top: -52px;
     }
 
     section#explore .left{
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
     }
 
     section#explore h1{
@@ -699,13 +699,16 @@ a.css-6kluu6{
     }
 
     section#about h1{
-        z-index: 4;
+        font-size: 3rem;
+        margin: auto;
     }
 
     section#about .left{
         margin: 0;
+        margin-top: 8rem;
         justify-items: center;
         height: auto;
+
     }
 
     section#about .about{
@@ -714,6 +717,7 @@ a.css-6kluu6{
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
         width: 50%;
+        margin: 0;
     }
 
     section#magazine{
@@ -731,11 +735,9 @@ a.css-6kluu6{
     }
 
     section#submit{
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: none;
+        display: flex;
+        flex-direction: row;
         margin: 0;
-        height: 133vh;
-        
     }
 
     section#submit .right{
@@ -762,6 +764,49 @@ a.css-6kluu6{
     footer .links{
         margin: 0;
         margin: auto;
+    }
+
+    section#magazine{
+        width: min-content;
+    }
+
+    section#magazine img{
+        z-index: 4;
+        max-width: 382px;
+        height: auto;
+    }
+
+    section#social{
+        margin: 1rem;
+    }
+
+    section#submit .left {
+        background-color: #EEE5DE;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+         padding: 0rem;
+        width: auto;
+        max-width: 390px;
+        flex-direction: column;
+    }
+
+    .talk p{
+        width: fit-content;
+    }
+
+    form{
+        max-width: max-content;
+    }
+    textarea{
+        max-width: inherit ;
+    }
+
+    .submit-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
     }
 
 
