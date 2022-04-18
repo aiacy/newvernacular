@@ -605,10 +605,6 @@ a.css-6kluu6{
     header img{
         width: 250px;
     }
-    .mobile{
-        width: 42%;
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -625,6 +621,9 @@ a.css-6kluu6{
         margin-bottom: 2rem;
         max-width: inherit;
         background-color: #EEE5DE;
+        -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+-moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
     }
 
     section#top, section#explore, section#about{
@@ -676,7 +675,6 @@ a.css-6kluu6{
     }
 
     section#explore .right{
-        z-index: 3;
         margin: 0;
     }
 
@@ -693,9 +691,13 @@ a.css-6kluu6{
         height: 40vh;
     }
 
+    #explore .left p.small{
+        text-align: center;
+        border: solid 2px white;
+    }
+
     section#about{
         grid-template-columns: none;
-        height: 100vh;
     }
 
     section#about h1{
@@ -719,12 +721,6 @@ a.css-6kluu6{
         width: 50%;
         margin: 0;
     }
-
-    section#magazine{
-        height: 100vh;
-        margin-top: -12rem;
-    }
-    
 
     section#submit h1{
         font-size: 6rem;
@@ -768,10 +764,12 @@ a.css-6kluu6{
 
     section#magazine{
         width: min-content;
+        margin: 0 2rem 2rem 0;
+        z-index: 0;
     }
 
     section#magazine img{
-        z-index: 4;
+        z-index: 0;
         max-width: 382px;
         height: auto;
     }
@@ -851,7 +849,7 @@ hr{
     }
 
     section#magazine img{
-        z-index: 4;
+        
         max-width: 382px;
         height: auto;
     }
