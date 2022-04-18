@@ -748,7 +748,9 @@ a.css-6kluu6{
     section#submit{
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin: auto;
+        flex-wrap: wrap;
+        width: fit-content;
     }
 
     section#submit .right{
