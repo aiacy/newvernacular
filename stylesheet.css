@@ -692,11 +692,6 @@ input[type=text], select, textarea{
 
     }
 
-    #myBtn{
-        position: absolute;
-        bottom: 3rem;
-        background-color: black;
-    }
 
     section#top, section#explore, section#about{
         max-width: inherit;
@@ -781,11 +776,12 @@ input[type=text], select, textarea{
     section#about h1{
         font-size: 3rem;
         margin: auto;
+        text-decoration-line: underline;
     }
 
     section#about .left{
         margin: 0;
-        margin-top: 8rem;
+        margin-top: 6rem;
         justify-items: center;
         height: auto;
 
@@ -797,7 +793,7 @@ input[type=text], select, textarea{
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
         width: 50%;
-        margin: 0;
+        margin-top: 2rem;
     }
 
     section#submit h1{
@@ -899,6 +895,13 @@ input[type=text], select, textarea{
         max-width: inherit ;
     }
 
+    .feature .left h2{
+        text-decoration-line: underline;
+        text-align: center;
+        align-self: center;
+
+    }
+  
 
 }
 
