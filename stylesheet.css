@@ -314,6 +314,7 @@ section#top{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: -98px;
+    
 }
 
 section#top img{
@@ -690,8 +691,16 @@ input[type=text], select, textarea{
         margin: auto;
     }
 
+    nav{
+        display: flex;
+    }
+
+    nav a#home{
+        display: none;
+    }
+
     .mobile-caption{
-        margin-top: 1rem;
+        margin-top: 4rem;
         margin-left: 1rem;
     }
 
@@ -728,16 +737,16 @@ input[type=text], select, textarea{
     }
 
     header{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
         gap: 1rem;
-        position: relative;
+        position: sticky;
         margin: 0;
         padding: 1rem;
         margin-bottom: 2rem;
         max-width: inherit;
         background-color: #EEE5DE;
-
+        display: flex;
+        border-bottom: 1px solid black;
+        z-index: 4;
     }
 
 
@@ -750,6 +759,7 @@ input[type=text], select, textarea{
     .accent {
         border: none;
         border-bottom: 3px solid #D06136;
+        padding: 0;
     }
 
     nav a{
@@ -764,10 +774,12 @@ input[type=text], select, textarea{
     section#top{
         flex-direction: column;
         background-color: #EEE5DE;
-        margin-top: -4rem;
         padding-top: 2rem;
         display: flex;
         flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        margin-top: -2rem;
     }
 
     section#top img {
@@ -783,6 +795,7 @@ input[type=text], select, textarea{
         margin: 0;
         padding: 1rem;
         justify-items: start;
+        place-items: start !important;
     }
 
     section#top .right p.caption{
