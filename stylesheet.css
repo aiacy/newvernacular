@@ -842,16 +842,17 @@ input[type=text], select, textarea{
     }
 
     section#about h1{
-        font-size: 3rem;
+        font-size: 2rem;
         margin: auto;
-        text-decoration-line: underline;
+        
     }
 
     section#about .left{
-        margin: 0;
-        margin-top: 6rem;
+        margin: 1rem;
         justify-items: center;
         height: auto;
+        background-color: #EEE5DE;
+        padding: 2rem;
 
     }
 
