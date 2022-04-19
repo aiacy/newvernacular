@@ -20,6 +20,29 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+.container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  .scrolling-text .scrolling-text-content {
+    color: #fff;
+    font-size: 103px;
+    white-space: nowrap;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    line-height: 1em;
+    
+  }
+  
+
 /* Backgrounds */
 
 section, body{background: #EEE5DE;}
@@ -103,6 +126,11 @@ nav{
     color: black;
 }
 
+section#scrolling{
+    margin-top: 6rem;
+    font-family: 'modumlight';
+  }
+
 /* Semantic Styles */
 
 body{overflow-x: hidden; 
@@ -135,6 +163,20 @@ main{
       font-size: inherit;
       text-decoration: underline;
   }
+
+  figcaption{
+    position: relative;
+    background-color: rgb(31, 30, 30);
+    color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -2rem;
+    padding: 1rem;
+    z-index: 3;
+    font-family: 'modum';
+    text-align: center;
+    font-size: 14px;
+}
 
 
 
@@ -469,8 +511,8 @@ section#magazine {
 }
 
 section#submit{
-    display: grid;
-    grid-template-columns:  1fr 1fr;
+    display: flex;
+    
     place-items: center;
     margin: 6rem;
     
@@ -481,15 +523,20 @@ section#submit .left {
     display: grid;
     padding: 4rem;
     padding-bottom: 4rem;
-    width: 60%;
+    width: 200%;
     justify-content: center;
 
+}
+
+section#submit .right{
+    margin: 2rem;
+    margin-top: 0;
 }
 
 section#hide{
     background-color: white;
     height: 40px;
-    margin-top: -3.4rem;
+    margin-top: -5.5rem;
     z-index: 100;
 }
 
@@ -603,8 +650,9 @@ input[type=text], select, textarea{
   
   /* Style the label to display next to the inputs */
   label {
-    padding: 12px 12px 12px 0;
+    padding: 3px 3px 3px 0;
     display: inline-block;
+    font-family: 'bw_modelicabold';
   }
   
   /* Style the submit button */
@@ -615,16 +663,25 @@ input[type=text], select, textarea{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    float: left;
+  }
+  input[placeholder]{
+      color: rgba(0, 0, 0, 0.448);
+  }
+  input[placeholder], textarea{
+    font-family: 'bw_modelicaregular';
+    font-size: 12px;
   }
   
   /* Style the container */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #EEE5DE;
     padding: 20px;
   }
   
+
+
   /* Floating column for labels: 25% width */
   .col-25 {
     float: left;
