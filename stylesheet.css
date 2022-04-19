@@ -11,6 +11,10 @@ html, body {
     padding: 0px;
     }
 
+    main{
+        border: solid 1rem #EEE5DE;
+    }
+
 body{
     overflow-x: hidden;
     max-width: 100%;
@@ -35,7 +39,29 @@ html.sr .load-hidden {
   
   .scrolling-text .scrolling-text-content {
     color: #fff;
-    font-size: 103px;
+    font-size: 86px;
+    white-space: nowrap;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    line-height: 1em;
+    
+  }
+
+  .container1 {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .scrolling-text1 {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  .scrolling-text1 .scrolling-text-content1 {
+    color: #fff;
+    font-size: 86px;
     white-space: nowrap;
     transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
     line-height: 1em;
@@ -355,7 +381,7 @@ section#top{
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: -98px;
+    margin-top: -80px;
     
 }
 
@@ -445,7 +471,7 @@ section#about{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    margin: 3rem;
     font-family: 'bw_modelicaregular';
     background: white;
 }
@@ -508,6 +534,7 @@ section#magazine {
     justify-items: center;
     align-items: center;
     background: white;
+    margin-right: 2rem;
 }
 
 section#submit{
@@ -538,6 +565,7 @@ section#hide{
     height: 40px;
     margin-top: -5.5rem;
     z-index: 100;
+    margin-right: 2rem;
 }
 
 .feature .left img{
@@ -593,6 +621,7 @@ footer{
     font-size: 12px;
     color: #EEE5DE;
     align-items: center;
+    margin-right: 2rem;
 
 }
 
@@ -639,7 +668,7 @@ a.css-6kluu6{
 }
 
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+input[type=text],input[type=email], input[type=url], select, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
