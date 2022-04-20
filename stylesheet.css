@@ -112,6 +112,8 @@ svg{
    
 }
 
+
+
 textarea{
     width: 545px;
     height: 90px;
@@ -533,8 +535,15 @@ section#magazine {
     display: grid;
     justify-items: center;
     align-items: center;
-    background: white;
     margin-right: 2rem;
+}
+
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -395px;
 }
 
 section#submit{

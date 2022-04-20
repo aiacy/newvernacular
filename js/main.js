@@ -146,11 +146,11 @@ $(document).ready(function() {
             container1.css('height', scrollingTextHeight1);
         
             var getActiveScrollingText1 = function(direction1) {
-                var firstScrollingText1 = container.find1('.scrolling-text1:nth-child(1)');
-                var secondScrollingText1 = container.find1('.scrolling-text1:nth-child(2)');
+                var firstScrollingText1 = container1.find('.scrolling-text1:nth-child(1)');
+                var secondScrollingText1 = container1.find('.scrolling-text1:nth-child(2)');
         
-                var firstScrollingTextLeft1 = parseInt(container.find('.scrolling-text1:nth-child(1)').css("left"), 10);
-                var secondScrollingTextLeft1 = parseInt(container.find('.scrolling-text1:nth-child(2)').css("left"), 10);
+                var firstScrollingTextLeft1 = parseInt(container1.find('.scrolling-text1:nth-child(1)').css("left"), 10);
+                var secondScrollingTextLeft1 = parseInt(container1.find('.scrolling-text1:nth-child(2)').css("left"), 10);
         
                 if (direction1 === 'left') {
                     return firstScrollingTextLeft1 < secondScrollingTextLeft1 ? secondScrollingText1 : firstScrollingText1;
@@ -182,7 +182,7 @@ $(document).ready(function() {
                 if (transformAmount1 < leftBound1) {
                     var activeText1 = getActiveScrollingText1('left');
                     activeText1.css({'left': Math.round(leftBound1 - scrollingTextWidth1 - startLetterIndent1) + 'px'});
-                    leftBound1 = parseInt(activeText.css("left"), 10);
+                    leftBound1 = parseInt(activeText1.css("left"), 10);
                     rightBound1 = leftBound1 + scrollingTextWidth1 + scrollAmountBoundary1 + startLetterIndent1;
         
                 } else if (transformAmount1 > rightBound1) {
@@ -198,127 +198,6 @@ $(document).ready(function() {
 
 
 
-
-let options = {
-	root: null,
-	threshold: 1
-};
-
-let ExploreCallback = (entries, observer) => {
-	
-
-	entries.forEach(entry => {
-		if (entry.isIntersecting = true){
-			entry.target.style.backgroundColor = '#EEE5DE;';
-		}
-	//   entry.boundingClientRect
-    //   entry.intersectionRatio
-    //   entry.intersectionRect
-    //   entry.isIntersecting
-    //   entry.rootBounds
-    //   entry.target
-    //   entry.time
-	});
-};
-
-
-let HeaderCallback = (entries, observer) => {
-	
-
-	entries.forEach(entry => {
-		if (entry.isIntersecting === true){
-			entry.target.style.backgroundColor = 'blue';
-			console.log('should be blue header');
-		} else {
-			entry.target.style.backgroundColor = '#EEE5DE';
-			console.log('should be white header');
-		}
-	//   entry.boundingClientRect
-    //   entry.intersectionRatio
-    //   entry.intersectionRect
-    //   entry.isIntersecting
-    //   entry.rootBounds
-    //   entry.target
-    //   entry.time
-	});
-};
-
-let headerObserver = new IntersectionObserver(HeaderCallback, {root: document.querySelector('#top')});
-let headerTarget = document.querySelector('#header');
-
-headerObserver.observe(headerTarget);
-
-
-let observer = new IntersectionObserver(ExploreCallback, options);
-
-let exploreTarget = document.querySelector('#explore');
-
-observer.observe(exploreTarget);
-
-
-
-
-
-$(function () {
-	$("#home").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#top").offset().top
-		}, 2000);
-		});
-
-	$("#link1").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#about").offset().top
-    }, 2000);
-	});
-
-	$("#link2").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#submit").offset().top
-		}, 2000);
-		});
-	
-
-	$("#see").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#explore").offset().top
-		}, 2000);
-		});
-
-	$("header").scroll(function(){
-		$(this).css( "display","none");
-	});
-
-
-	var settings = {
-		delay: 375,
-		duration: 500,
-		reset: true,
-		viewOffset: {
-			top: 30,
-			right: 0,
-			bottom: 0,
-			left: 0,
-		}
-	};
-
-
-
-
-var viewport = document.querySelector('section#top')
-var output = document.querySelector('p.output')
-
-viewport.addEventListener('scroll', event => {
-	output.textContent = `Scroll top: ${viewport.scrollTop}`;
-});
-
-
-//Loading animation
-var darkLogo = document.getElementById('dark-logo')
-var finishAnimation = document.querySelector('.loader')
-finishAnimation.onanimationend = () => {
-	darkLogo.classList.add('hidden');
-}
 
 
 //Slide
@@ -341,6 +220,4 @@ function initSlideShow(slideshow) {
 		slides[index].classList.add('active');
 
 	}, time);
-}
-
-});
+};
