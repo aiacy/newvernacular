@@ -1,15 +1,3 @@
-function sendEmail(){
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "amiacoderyet@gmail.com",
-        Password: "Iwtcpf4y!",
-        To: 'amiacoderyet@gmail.com',
-        From: "aliyahrcottle@gmail.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-    });
-}
-
 $(document).ready(function() {
     var containers = $('.container');
 
@@ -31,7 +19,7 @@ $(document).ready(function() {
             // Init variables and config
             var scrollingText = container.find('.scrolling-text'),
                 scrollingTextWidth = scrollingText.outerWidth(),
-                scrollingTextHeight = scrollingText.outerHeight(true),
+                scrollingTextHeight = scrollingText.outerHeight(true) * 1.4,
                 startLetterIndent = parseInt(scrollingText.find('.scrolling-text-content').css('font-size'), 10) / 4.8,
                 startLetterIndent = Math.round(startLetterIndent),
                 scrollAmountBoundary = Math.abs($(window).width() - scrollingTextWidth),
