@@ -66,7 +66,9 @@ $(document).ready(function() {
                     container.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(-10deg)');
                 }
                 setTimeout(function(){
-                    container.find('.scrolling-text').css('transform', 'translate3d('+ transformAmount * -1 +'px, 0, 0)');
+                    container.find('.scrolling-text').css({'transform': 'translate3d('+ transformAmount * -1 +'px, 0, 0)',
+                                                           '-ms-transform': 'translate3d('+ transformAmount * -1 +'px, 0, 0)',
+                                                           '-webkit-transform': 'translate3d('+ transformAmount * -1 +'px, 0, 0)'});
                 }, 10);
                 setTimeout(function() {
                     container.find('.scrolling-text .scrolling-text-content').css('transform', 'skewX(0)');
