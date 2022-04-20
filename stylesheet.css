@@ -597,7 +597,6 @@ label {
 input {
     border: none;
     margin-right: 0.5rem;
-    margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 0.5rem;
 }
@@ -801,7 +800,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     .scrolling-text .scrolling-text-content{
-        font-size: 71px;
+        font-size: 50px;
     }
 
     section#explore{
@@ -900,7 +899,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     section#hide{
-        margin-top: -2.5rem;
+        margin-top: -3.5rem;
     }
 
     section#top p{
@@ -910,6 +909,11 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         text-align: start;
       
     }
+
+      
+  .scrolling-text1 .scrolling-text-content1 {
+    font-size: 50px;    
+  }
 
     section#explore{
     grid-template-columns: none;
@@ -1059,6 +1063,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
     form{
         max-width: max-content;
+        margin-top: 2rem;
     }
 
     span.formrow{
