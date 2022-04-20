@@ -146,8 +146,8 @@ $(document).ready(function() {
             container1.css('height', scrollingTextHeight1);
         
             var getActiveScrollingText1 = function(direction1) {
-                var firstScrollingText1 = container.find('.scrolling-text1:nth-child(1)');
-                var secondScrollingText1 = container.find('.scrolling-text1:nth-child(2)');
+                var firstScrollingText1 = container.find1('.scrolling-text1:nth-child(1)');
+                var secondScrollingText1 = container.find1('.scrolling-text1:nth-child(2)');
         
                 var firstScrollingTextLeft1 = parseInt(container.find('.scrolling-text1:nth-child(1)').css("left"), 10);
                 var secondScrollingTextLeft1 = parseInt(container.find('.scrolling-text1:nth-child(2)').css("left"), 10);
