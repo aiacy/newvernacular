@@ -142,9 +142,9 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
     top: 0;
-    background-color: transparent;
+    background-color: #EEE5DE;
 }
 
 header img{
@@ -165,6 +165,10 @@ nav{
 section#scrolling{
     margin-top: 6rem;
     font-family: 'modumlight';
+  }
+
+  #magazine img{
+      width: 60%;
   }
 
 /* Semantic Styles */
@@ -212,6 +216,15 @@ main{
     font-family: 'modum';
     text-align: center;
     font-size: 14px;
+}
+
+
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -600px;
 }
 
 
@@ -546,14 +559,6 @@ section#magazine {
     margin-right: 2rem;
 }
 
-.circle{
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    background-color: white;
-    margin-top: -395px;
-}
-
 section#submit{
     display: flex;
     
@@ -848,6 +853,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         position: sticky;
         margin: 0;
         padding: 1rem;
+        padding-top: 1rem;
         max-width: inherit;
         background-color: #EEE5DE;
         display: flex;
@@ -1038,6 +1044,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#magazine img{
         z-index: 0;
         max-width: 414px;
+        width: auto;
         height: auto;
     }
 
@@ -1048,11 +1055,19 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     section#scrolling{
-
-    margin-top: 6rem;
     margin-bottom: 6rem;
 
     }
+
+
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -395px;
+}
+
 
     section#submit .left {
         background-color: #EEE5DE;
