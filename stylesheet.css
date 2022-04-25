@@ -30,10 +30,6 @@ section#button a{
     overflow: hidden;
   }
 
-  section#blurb{
-      height: auto;
-  }
-
   section#blurb p{
       text-align: center;
     font-family: 'modumbold';
@@ -41,6 +37,10 @@ section#button a{
     margin: auto;
     font-size: 1.7rem;
     padding: 4rem;
+  }
+
+  section#blurb .blurb-box{
+      height: 100vh;
   }
   
   .scrolling-text {
@@ -218,7 +218,7 @@ main{
 
   figcaption{
     position: relative;
-    background-color: rgb(31, 30, 30);
+    background-color: black;
     color: white;
     padding: 1rem;
     font-family: 'modum';
@@ -263,7 +263,21 @@ nav a{
     z-index: 4;
 }
 
+.blurb-box{
+    display: flex;
+    width: auto;
+}
 
+
+.blurb-box img:nth-child(1){
+    width: 40%;
+}
+
+.blurb-box img:nth-child(2){
+    width: 60%;
+    margin-left: 1rem;
+    margin-bottom: 8rem;
+}
 
 
 
@@ -503,10 +517,10 @@ section#explore .right{
 section#about{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 3rem;
+    grid-template-columns: 1fr 2fr;
+    padding: 2rem;
     font-family: 'bw_modelicaregular';
-    background: white;
+    background: #EEE5DE;
 }
 
 #explore .left p.small{
@@ -516,33 +530,36 @@ section#about{
     text-align: left;
 }
 
-section#about h1, section#submit h1{
-    color:black; align-self: start;
+section#about h1, section#submit h2{
+    color:black;
     font-family: 'bw_modelicabold';
-    justify-self: start;
-    font-size: 5rem;
+    font-size: 2rem;
     opacity: 0.8;
 }
 
+section#submit h3{
+    font-family: 'modummedium';
+}
+
+section#submit p{
+    font-family: 'bw_modelicaregular';
+}
 
 
 section#about h1{
-    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 section#about .left{
     display: flex;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    grid-template-rows: 1fr 3fr;
+    align-items: end;
     flex-direction: column;
-    margin-top: 4rem;
+    padding-top: 1rem;
 }
 
 .heading-container h2{
-    font-family: 'bw_modelicabold';
+    font-family: 'modummedium';
     margin-bottom: 1rem;
 }
 
@@ -552,48 +569,75 @@ section#about .right{
 }
 
 section#about .about{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    width: 82%;
-    gap: 2rem;
+    display: flex;
+    width:67%;
     margin: 4rem;
-    align-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    text-align: end;
+}
+
+section#about .about div:nth-child(1), section#about .about div:nth-child(2){
+    margin-bottom: 1.5rem;
 }
 
 section#magazine {
     display: grid;
     justify-items: center;
     align-items: center;
-    margin-right: 2rem;
 }
 
 section#submit{
     display: flex;
-    
     place-items: center;
-    margin: 6rem;
+    background-color: #D06136;
+    padding: 6rem;
     
+}
+
+section#submit .submit-thing{
+    display: flex;
+    background-color: #EEE5DE;
+}
+
+section#submit .submit-thing .left{
+    display: flex;
+    flex-direction: column;
 }
 
 section#submit .left {
     background-color: #EEE5DE;
-    display: grid;
+    display: flex;
     padding: 4rem;
-    padding-bottom: 4rem;
-    width: 200%;
-    justify-content: center;
-
+    padding-right: 0;
 }
 
 section#submit .right{
-    margin: 2rem;
-    margin-top: 0;
+    margin: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section#submit .right p{
+padding: 0;
+padding-top: 1.5rem;
+padding-bottom: 2rem;
+}
+
+section#submit img:nth-child(1){
+    padding-bottom: 1rem;
+}
+
+.contact-info{
+    margin-top: 3rem;
+    padding-right: 8rem;
 }
 
 section#hide{
-    background-color: white;
+    background-color: #EEE5DE;
     height: 40px;
     margin-top: -5.5rem;
     z-index: 100;
@@ -652,7 +696,6 @@ footer{
     font-size: 12px;
     color: #EEE5DE;
     align-items: center;
-    margin-right: 2rem;
 
 }
 
@@ -690,8 +733,17 @@ section#submit h1{
 
 
 section#social{
-    background-color: white;
-    margin: 4rem;
+    background-color: #EEE5DE;
+    padding: 4rem;
+}
+
+section#social h2{
+    text-align: center;
+    color: black;
+    font-family: 'bw_modelicabold';
+    font-size: 2rem;
+    opacity: 0.8;
+    padding-bottom: 1rem;
 }
 
 a.css-6kluu6{
@@ -845,7 +897,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         background-color: rgb(31, 30, 30);
         color: white;
         padding: 1rem;
-        font-family: 'modum';
+        font-family: 'modumlight';
         text-align: center;
         font-size: 14px;
     }
@@ -919,6 +971,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
     section#hide{
         margin-top: -3.5rem;
+        background-color: #EEE5DE;
     }
 
     section#top p{
@@ -980,7 +1033,6 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         height: auto;
         background-color: #EEE5DE;
         padding: 2rem;
-        padding-top: 6rem;
 
     }
 
