@@ -598,6 +598,8 @@ section#submit{
 section#submit .submit-thing{
     display: flex;
     background-color: #EEE5DE;
+    width: 92%;
+    margin: auto;
 }
 
 section#submit .submit-thing .left{
@@ -633,7 +635,7 @@ section#submit img:nth-child(1){
 
 .contact-info{
     margin-top: 3rem;
-    padding-right: 8rem;
+
 }
 
 section#hide{
