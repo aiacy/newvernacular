@@ -3,108 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= <section id="submit" class="feature">     
-        <div class="left">
-            <div class="submit-container">   
-                <h2 style="opacity: 0.8;">Get in Touch</h2>
-
-                <h3>Submissions</h3>
-                <p></p>
-
-                <div class="talk">
-                    <p>If you'd like your project to featured on New Vernacular, visit our <a href="#"> submissions page </a> to review the guidelines </p>
-                    <p> For general inquiries or brand partnerships and advertising, fill out the following form: </p> 
-                </div>
-                
-                <form method="post">
-                <span class="formrow">
-                    <div>
-                        <label for="inquiry-type">Choose a region:</label>
-                        <select name="inquriy-type" id="inquriy-type">
-                            <option value="#">Africa</option>
-                            <option value="#">Latin America</option>
-                            <option value="#">Southeast Asia</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="project-type">Project type</label>
-                        <select name="project-type" id="project-type" required>
-                            <option value="#">Architecture</option>
-                            <option value="#">Design (furniture, lighting, installation, etc.) </option>
-                            <option value="#">Art</option>
-                            <option value="#">Fashion</option>
-                        </select>
-                    </div>
-       
-                    <div>
-                        <label for="fname">Your name:</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Last name" required><br>
-                    </div>
-
-                    <div>
-                        <label for="email">Email</label><br>
-                       <input type="email" name="email" id="email" placeholder="your@email.com" required><br>
-                    </div>
-
-                    <div>
-                        <label for="company">Company</label><br>
-                        <input type="text" name="company" id="company" placeholder="Office/Company">
-                    </div>
-                    <div>
-                        <label for="email">URL</label><br>
-                        <input type="url" name="website" id="website" placeholder="http://" required><br>
-                        
-                    </div>
-
-                    <div>
-                        <input id="file" type="file" />
-                    </div>
-
-                </span>
-
-                <input type="submit" value="Submit">
-
-            </form>
-
-            <div class="instructions">
-               
-            </div>
-        </div>
-        </div>
-        <div class="right">
-            <div class="contact">
-                <img data-aos="fade-in"
-            data-aos-delay="150"
-            data-aos-duration="1000" class="responsive" src="./images/cpn-centralayutthaya-22.jpg" alt="">
-                
-                <img data-aos="fade-in"
-                data-aos-delay="150"
-                data-aos-duration="1000" class="responsive" src="./images/casa.jpg" alt="">
-            
-            </div>
-            
-        </div>
-    </section>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Venacular</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/main.js" defer></script>
+    <script href="https://kit.fontawesome.com/094a0588c2.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
+    <main>
+        <!-- Preloader 
+        <section id="loader" class="preloader">
+            <img class="responsive" src="./images/white-logo.png" alt="">
+            <img id="dark-logo" class="responsive secondLogo loader" src="./images/black-logo.png" alt="">
+        </section>
+-->
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <a href="./index.html#top">
+                    <img style="display: none;" class="responsive white-logo" src="./images/white-logo.png" alt=""> 
+                    <img  class="responsive scrollElement" src="./images/black-logo.png"  alt="">
+                </a>
+                
+            </div>
+            <nav>
+                <a id="home" href="./index.html">Home</a>
+                <a id="link1" href="./index.html#about">About</a>
+                <a id="link2" class="accent" href="./submit.html">Submit</a>
+            </nav>
+        </header>
+
+        <section id="submit" class="feature">     
+            <div class="left">
+                <div class="submit-container">   
+                    <h2 style="opacity: 0.8;">Get in Touch</h2>
     
+                    <h3>Submissions</h3>
+                    <p></p>
+    
+                    <div class="talk">
+                        <p>If you'd like your project to featured on New Vernacular, visit our <a href="#"> submissions page </a> to review the guidelines </p>
+                        <p> For general inquiries or brand partnerships and advertising, fill out the following form: </p> 
+                    </div>
+                    
+                    <form method="post">
+                    <span class="formrow">
+                        <div>
+                            <label for="inquiry-type">Choose a region:</label>
+                            <select name="inquriy-type" id="inquriy-type">
+                                <option value="#">Africa</option>
+                                <option value="#">Latin America</option>
+                                <option value="#">Southeast Asia</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="project-type">Project type</label>
+                            <select name="project-type" id="project-type" required>
+                                <option value="#">Architecture</option>
+                                <option value="#">Design (furniture, lighting, installation, etc.) </option>
+                                <option value="#">Art</option>
+                                <option value="#">Fashion</option>
+                            </select>
+                        </div>
+           
+                        <div>
+                            <label for="fname">Your name:</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="Last name" required><br>
+                        </div>
+    
+                        <div>
+                            <label for="email">Email</label><br>
+                           <input type="email" name="email" id="email" placeholder="your@email.com" required><br>
+                        </div>
+    
+                        <div>
+                            <label for="company">Company</label><br>
+                            <input type="text" name="company" id="company" placeholder="Office/Company">
+                        </div>
+                        <div>
+                            <label for="email">URL</label><br>
+                            <input type="url" name="website" id="website" placeholder="http://" required><br>
+                            
+                        </div>
+    
+                        <div>
+                            <input id="file" type="file" />
+                        </div>
+    
+                    </span>
+    
+                    <input type="submit" value="Submit">
+    
+                </form>
+    
+                <div class="instructions">
+                   
+                </div>
+            </div>
+            </div>
+            <div class="right">
+    
+                <div class="contact">
+                    <img data-aos="fade-in"
+                data-aos-delay="150"
+                data-aos-duration="1000" class="responsive" src="./images/cpn-centralayutthaya-22.jpg" alt="">
+                    
+                    <img data-aos="fade-in"
+                    data-aos-delay="150"
+                    data-aos-duration="1000" class="responsive" src="./images/casa.jpg" alt="">
+                
+                </div>
+                
+            </div>
+        </section>, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    
+    
+    <div class="right">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <h3>SUbmissions</h3>
+            <p>If you'd like to be featured in our first New Vernacular print issue, visit our submissions page to 
+                review to guidelines</p>
+            <h3>Sponsorships</h3>
+            <p>We are eager to partner with like-minded brands that align with our audience's interests and values.
+                 Email us to discuss potential sponsorship or partnership opportunities.</p>
+            <h3>Contributors</h3>
+            <p>Are you a write, narratives designer, journalist, or blogger who is passionate about vernacular 
+                inspired architecture, design, and art? We are interested in adding like-minded individuals to our 
+                team. Email us your pitch, resume, and a sample of your writing</p>
+        </div>
+        
+        <footer>
+            <div class="foot">
+                <p>©2022 New Vernacular</p>
+                <p>Made with love by Aliyah</p>
+            </div>
+            <div class="links">
+              
+
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
+                    <title>facebook</title>
+                    <path d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z"></path>
+                    </svg>
+                    
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <title>instagram</title>
+                            <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+                            <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+                            <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+                            </svg>
+            </div>
+        </footer>
+       
+    </main>
+    
+        
+<script 
+  src="https://cdn2.woxo.tech/a.js#625ad727aab45a002840e5a4" 
+  async data-usrc>
+</script>
+   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+      AOS.init();
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 150, // values from 0 to 3000, with step 50ms
+        duration: 1400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 </body>
 </html>
 
 
-<div class="right">
-    <h2>Get in Touch</h2>
-    <div class="contact-info">
-        <h3>SUbmissions</h3>
-        <p>If you'd like to be featured in our first New Vernacular print issue, visit our submissions page to 
-            review to guidelines</p>
-        <h3>Sponsorships</h3>
-        <p>We are eager to partner with like-minded brands that align with our audience's interests and values.
-             Email us to discuss potential sponsorship or partnership opportunities.</p>
-        <h3>Contributors</h3>
-        <p>Are you a write, narratives designer, journalist, or blogger who is passionate about vernacular 
-            inspired architecture, design, and art? We are interested in adding like-minded individuals to our 
-            team. Email us your pitch, resume, and a sample of your writing</p>
-    </div>
+
+
+
+
+
+
+
+
