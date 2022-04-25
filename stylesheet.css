@@ -11,10 +11,6 @@ html, body {
     padding: 0px;
     }
 
-    main{
-        border: solid 1rem #EEE5DE;
-    }
-
 body{
     overflow-x: hidden;
     max-width: 100%;
@@ -24,10 +20,27 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+section#button a{
+    font-family: 'modumbold';
+}
+
 .container {
     position: relative;
     width: 100vw;
     overflow: hidden;
+  }
+
+  section#blurb{
+      height: auto;
+  }
+
+  section#blurb p{
+      text-align: center;
+    font-family: 'modumbold';
+    width: 49%;
+    margin: auto;
+    font-size: 1.7rem;
+    padding: 4rem;
   }
   
   .scrolling-text {
@@ -142,7 +155,6 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    padding-left: 1rem;
     top: 0;
     background-color: #EEE5DE;
 }
@@ -208,11 +220,7 @@ main{
     position: relative;
     background-color: rgb(31, 30, 30);
     color: white;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: -2rem;
     padding: 1rem;
-    z-index: 3;
     font-family: 'modum';
     text-align: center;
     font-size: 14px;
@@ -236,12 +244,12 @@ p{padding: 1rem;}
 a{
     color: black;
     text-decoration: none;
-    font-family: 'bw_modelicabold';
     font-size: 16px;
 }
 
 nav a{
     margin-right: 1rem;
+    font-family: 'bw_modelicabold';
 }
 
 .accent{
@@ -253,10 +261,6 @@ nav a{
 .pre
 {
     z-index: 4;
-}
-
-button a{
-    color: white;
 }
 
 
@@ -387,7 +391,7 @@ button a{
 }
 
 button, input[type="submit" i]{
-    background-color: black;
+    background-color: #EEE5DE;
     color: #EEE5DE;
     border: none;
     padding: 1rem;
@@ -405,6 +409,8 @@ section#top{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: -80px;
+    background-color: #D06136;
+    padding-left: 1rem;
     
 }
 
@@ -416,23 +422,27 @@ section#top img{
 
 section#top p{
     font-family: 'bw_modelicabold';
-    font-size: 33px;
-    text-align: right;
-    line-height: 52px;
+    font-size: 30px;
+    line-height: 42px;
     width: 100%;
 }
 
 section#top .right{
     display: grid;
     align-content: center;
-    justify-items: end;
+    color: white;
     margin-right: 2rem;
     width: 79%;
     margin-left: 2rem;
 }
 
 section#top button{
-    margin-right: 1rem;
+    margin: 1rem;
+    
+}
+
+section#button a{
+    font-family: 'modumbold';
 }
 
 
@@ -834,11 +844,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         position: relative;
         background-color: rgb(31, 30, 30);
         color: white;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: -2rem;
         padding: 1rem;
-        z-index: 3;
         font-family: 'modum';
         text-align: center;
         font-size: 14px;
@@ -853,7 +859,6 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         position: sticky;
         margin: 0;
         padding: 1rem;
-        padding-top: 1rem;
         max-width: inherit;
         background-color: #EEE5DE;
         display: flex;
