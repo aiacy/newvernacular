@@ -159,6 +159,10 @@ header{
     background-color: #EEE5DE;
 }
 
+.bold-link{
+    font-family: 'bw_modelicabold';
+}
+
 header img{
     width: 346px;
 }
