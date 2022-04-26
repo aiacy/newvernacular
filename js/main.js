@@ -1,3 +1,5 @@
+
+
 document.body.onload = function(){
     setTimeout(function() {
       var preloader = document.getElementById('loader');
@@ -11,6 +13,7 @@ document.body.onload = function(){
   
 
 $(document).ready(function() {
+
     var containers = $('.container');
 
     if (containers.length) {

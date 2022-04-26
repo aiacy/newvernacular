@@ -7,10 +7,11 @@
     <title>New Venacular</title>
     <link rel="stylesheet" href="./stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    <link rel="stylesheet" href="./simple-slides/slides.css"/>
     <script src="./js/main.js" defer></script>
+    <script defer src="./simple-slides/slides.js"></script>
     <script href="https://kit.fontawesome.com/094a0588c2.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
@@ -45,11 +46,14 @@
 
 
 
-                
-                <figure>
+                <div id="slidedemo"></div>
+                <!--
+                               <figure>
                 <img src="./images/feature_01.jpg" class="responsive" alt="">
                 <figcaption>Hornero Roga House by OMCM arquitectos</figcaption>
             </figure>
+                -->
+     
     
             
             </div>
@@ -194,6 +198,23 @@
   </script>
    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+          sslide.init({
+            target: "slidedemo",
+            images: [
+              {src: "./slideshow-img/1.jpg", cap: "Duyen Casa II Hotel by Block Architects"},
+              {src: "./slideshow-img/ateliernomadic-playaviva-kevin-steele-10 (1).jpg", cap: "Bamboo Treehouses at Playa Viva by Atelier Nomandic (photo by Kevin Steele)"},
+              {src: "./slideshow-img/casa-de-piedra-alberto-tonconogy-asociados-c-luis-abba-3-ok.jpg", cap: "Stone House by Estudio Alberto Tonconogy y Asociados (photo by Arq. Luis Abba) "},
+              {src: "./slideshow-img/CasaSalvaje_Archdaily_01 (1).jpg", cap: "Casa Salvaje by Mazpazz Arquitectura (photo by Andres Garcia Lachner"},
+              {src: "./slideshow-img/fi-cpn-centralayutthaya-59.jpg", cap: "Central Ayutthaya Facades by Onion"}
+            ],
+            // (OPTIONAL) 3 SEC PER SLIDE, REMOVE TO MANUAL SCROLL
+            auto: 3000
+          });
+        });
+        </script>
 
 <script>
       AOS.init();

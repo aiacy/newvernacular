@@ -1,0 +1,58 @@
+/* (A) SHARED */
+.sImg, .sCaption { width: 100%; }
+.sSlide, .sLeft, .sRight { display: flex; }
+
+/* (B) CONTAINER */
+.sSlide {
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1140px;
+  margin: 7rem;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+
+}
+
+/* (C) IMAGE */
+.sImg {
+  height: 584px !important;
+  object-fit: cover; /* fill, contain, scale-down */
+}
+
+/* (D) CAPTION */
+.sCaption {
+  padding: 10px;
+  color: #fff;
+  background: #000;
+  font-family: 'modummedium';
+  font-size: 12px;
+}
+
+/* (E) CONTROLS */
+/* (E1) LEFT/RIGHT BUTTONS */
+.sLeft, .sRight {
+  align-items: center;
+  position: absolute;
+  top: 0;
+  
+  height: 100%;
+  padding: 0 20px;
+  font-size: 2em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.sLeft { left: 0; }
+.sRight { right: 0; }
+
+/* (E2) SHOW ONLY ON HOVER */
+.sLeft, .sRight {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.sSlide:hover .sLeft, .sSlide:hover .sRight {
+  visibility: visible;
+  opacity: 1;
+}

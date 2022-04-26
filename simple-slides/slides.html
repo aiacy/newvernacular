@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Slideshow</title>
+
+    <!-- (A) LOAD LIBRARY -->
+    <link rel="stylesheet" href="slides.css"/>
+    <script defer src="slides.js"></script>
+  </head>
+  <body>
+
+    <!-- (B) CREATE HTML DIV -->
+    <div id="slidedemo"></div>
+
+    <!-- (C) ATTACH SLIDESHOW -->
+    <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      sslide.init({
+        target: "slidedemo",
+        images: [
+          {src: "dove.jpg", cap: "A birb."},
+          {src: "cat.jpg", cap: "An evil cate."},
+          {src: "fox.jpg", cap: "Not a doge."}
+        ],
+        // (OPTIONAL) 3 SEC PER SLIDE, REMOVE TO MANUAL SCROLL
+        auto: 3000
+      });
+    });
+    </script>
+  </body>
+</html>
