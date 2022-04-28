@@ -56,3 +56,13 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media screen and (max-width: 500px) {
+  .sSlide {
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1140px;
+    margin: 0;
+  
+  }
+}
