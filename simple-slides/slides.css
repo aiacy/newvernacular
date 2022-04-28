@@ -65,4 +65,8 @@
     margin: 0;
   
   }
+
+  .sCaption{
+    text-align: center;
+  }
 }

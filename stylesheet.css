@@ -981,7 +981,9 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     .mobile-caption{
+        margin: 3.6rem;
         margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .scrolling-text .scrolling-text-content{
@@ -1067,14 +1069,15 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         margin: 0;
         max-width: 100%;
         height: auto;
-        padding: 1rem;
-        border-radius: 28px;
+  
 
     }
     section#top .right{
         width: auto;
         margin: 0;
-        padding: 1rem;
+        padding: 4rem !important;
+        padding-left: 0;
+        padding-right: 0;
         justify-items: start;
         place-items: start !important;
     }
