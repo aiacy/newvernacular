@@ -968,6 +968,10 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     
     }
 
+    .submissions-container{
+        flex-direction: column;
+    }
+
     nav{
         display: flex;
     }
