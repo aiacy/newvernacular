@@ -5,6 +5,9 @@
     
 }
 
+.modalContent{
+    background-color: #EEE5DE !important;
+}
 
 #slides {
     position: relative;
