@@ -48,7 +48,7 @@
 
 /* (E2) SHOW ONLY ON HOVER */
 .sLeft, .sRight {
-  visibility: hidden;
+  visibility: hidden !important;
   opacity: 0;
   transition: opacity 0.3s;
 }

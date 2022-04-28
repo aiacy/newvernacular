@@ -523,12 +523,13 @@ section#top p{
 }
 
 section#top .right{
-    display: grid;
+    display: flex;
     align-content: center;
     color: white;
     margin-right: 2rem;
     margin-left: 2rem;
     width: 79%;
+    align-items: center;
     
 }
 
@@ -711,7 +712,7 @@ padding-top: 1.5rem;
 padding-bottom: 2rem;
 }
 
-section#submit img:nth-child(1){
+section#submit .right p:nth-child(3){
     padding-bottom: 1rem;
 }
 
