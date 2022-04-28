@@ -336,6 +336,10 @@ nav a{
     font-family: 'bw_modelicabold';
 }
 
+nav a:hover{
+    color:#D06136;
+}
+
 .accent{
     border: 3px solid #D06136;
     padding: 1rem;
@@ -726,7 +730,7 @@ section#submit .right p:nth-child(3){
 }
 
 .contact-info{
-    margin-top: 3rem;
+    margin-top: 2rem;
 
 }
 
