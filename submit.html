@@ -75,7 +75,15 @@
             width: auto !important;
         }
 
-        @media only screen and (max-width: 500px) {
+        @media screen and (min-width: 767px) {
+        
+            section#submit.page .left{
+                padding-right: 2rem;
+            }
+            
+        }
+
+        @media only screen and (max-width: 767px) {
 
             .submissions-container button{
                 width: 100%;
@@ -102,9 +110,7 @@
                 text-align: left;
 
             }
-            section#submit.page .left{
-                padding-right: 2rem;
-        }
+       
             #mc_embed_signup {
                 width: 100% !important;
             }
