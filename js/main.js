@@ -7,7 +7,7 @@ document.body.onload = function(){
       {
         preloader.classList.add('done');
       }
-    }, 300)
+    }, 800)
   }
 
   

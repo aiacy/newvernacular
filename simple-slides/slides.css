@@ -87,15 +87,15 @@
 }
 
 .sImg {
-  animation: fader 3s infinite, fadeIn 3s infinite;
+  animation: fader 3s infinite, fadeIn 3s infinite
 }
 
 @keyframes fader {
   from { opacity: 1.0; }
-  to   { opacity: 0.10; }
+  to   { opacity: 0.70; }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0.10;}
-  to { opacity: 1.0;}  
+  from { opacity: 0.10; }
+  to   { opacity: 1; }
 }
