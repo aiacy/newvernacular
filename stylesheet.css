@@ -960,7 +960,6 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
 @media only screen and (max-width: 768px) {
 
- 
     main{
        
         margin: auto;
@@ -1412,10 +1411,27 @@ hr{
     transform: rotate(90deg);
 }
 
-@media only screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     section#top p{
         font-size: 22px;
         line-height: 31px;
+    }
+    p.small {
+        font-size: 16px !important;
+        line-height: 1.7rem !important;
+        font-family: 'bw_modelicaregular' !important;
+    }
+
+    section#submit .right p{
+        font-size: 1rem !important;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+ 
+    section#about .right{
+        display: flex;
     }
 
     section#submit{
@@ -1443,20 +1459,17 @@ hr{
 
     }
 
-    section#about .right{
-        display: flex;
-    }
     section#submit .submit-thing .left{
         justify-content: space-evenly;
     }
 
-    section#about .about p, section#submit .right p, .bold-link{
+    section#about .about p{
         font-size: .8rem;
     }
 
     p.small{
-        font-size: .8rem !important;
-        line-height: 1.2rem !important;
+        font-size: .8rem;
+        line-height: 1.2rem;
     }
 }
 
