@@ -50,6 +50,8 @@ var sslide = {
     sslide.nav(id, 1);
   },
 
+  
+
   /* (C) NAVIGATION */
   nav : (id, direction) => {
     // (C1) CALCULATE NEXT SLIDE
@@ -63,12 +65,18 @@ var sslide = {
     // (C2) DRAW SLIDE
     inst.sImg.src = slides[inst.current].src;
     inst.sCaption.innerHTML = slides[inst.current].cap;
-    inst.sImg.classList.add('opacity');
 
+
+   
     // (C3) AUTO SCROLL MODE
     if (inst.auto) {
       if (inst.timer) { clearInterval(inst.timer); }
-      inst.timer = setInterval(() => { sslide.nav(id, 1); }, inst.auto);
+      inst.timer = setInterval(() => { 
+        sslide.nav(id, 1); 
+      }, inst.auto);
     }
   }
 };
+
+
+
