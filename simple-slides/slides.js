@@ -63,6 +63,7 @@ var sslide = {
     // (C2) DRAW SLIDE
     inst.sImg.src = slides[inst.current].src;
     inst.sCaption.innerHTML = slides[inst.current].cap;
+    inst.sImg.classList.add('opacity');
 
     // (C3) AUTO SCROLL MODE
     if (inst.auto) {

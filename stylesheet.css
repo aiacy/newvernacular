@@ -532,6 +532,7 @@ section#top p{
     font-size: 30px;
     line-height: 42px;
     width: 100%;
+    
 }
 
 section#top .right{
@@ -915,13 +916,14 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     clear: both;
   }
 
-  @media only screen and (min-width: 500px){
+  @media only screen and (min-width: 769px){
 
 .mobile-caption{
     display: none;
 }
 
   }
+
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
@@ -934,7 +936,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
 @media only screen and (max-width: 1273px){
     header{
-        margin: 2rem;
+        margin: 0rem;
     }
     
     header img{
@@ -943,20 +945,24 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
 }
 
-@media only screen and (max-width: 757px){
+@media only screen and (max-width: 768px){
     header{
-        margin: 1rem;
+        margin: 0rem;
         position: relative;
     }
     
     header img{
         width: 250px;
     }
+
+ 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+
+ 
     main{
-        max-width: 414px;
+       
         margin: auto;
         background-color: #EEE5DE;
         border: none;
@@ -1040,7 +1046,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
 
     section#top, section#explore, section#about{
-        max-width: 414px;
+     
         height: auto;
         overflow-x: hidden;
     }
@@ -1083,7 +1089,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#top .right{
         width: auto;
         margin: 0;
-        padding: 4rem !important;
+        padding: 2rem !important;
         padding-left: 0;
         padding-right: 0;
         justify-items: start;
@@ -1100,11 +1106,13 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     section#top p{
-        font-size: 25px;
-        line-height: 43px;
-        width: auto;
+
+        font-size: 31px;
+        line-height: 47px;
+        width: 69%;
         text-align: center;
         color: white;
+        margin: auto;
       
     }
 
@@ -1210,7 +1218,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         font-size: .85rem;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
-        width: 100%;
+        min-width: 60%;
         margin: auto;
         margin-top: 3rem;
         
@@ -1272,7 +1280,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#magazine{
         width: min-content;
         z-index: 0;
-        margin: 0;
+        margin: auto;
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
@@ -1364,7 +1372,7 @@ section#submit .submit-thing .left {
     }
 
     .feature .left h2{
-        color: #000000e6;
+        color: black;
         text-align: center;
         align-self: center;
         font-size: 2rem;
@@ -1380,12 +1388,14 @@ section#submit .submit-thing .left {
 
 }
 
-@media only screen and (max-width: 1036px){
+@media only screen and (max-width: 767px){
 
     section#top{
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
     }
+
+  
 
 
 
@@ -1402,10 +1412,63 @@ hr{
     transform: rotate(90deg);
 }
 
+@media only screen and (max-width: 1024px){
+    section#top p{
+        font-size: 22px;
+        line-height: 31px;
+    }
 
+    section#submit{
+        padding: 2rem;
+    }
 
-@media only screen and (max-width: 390px){
+    section#about{
+        padding-top: 8rem;
+    }
 
+    section#blurb p {
+        width: 80%;
+    }
+
+    .blurb-box img:nth-child(2) {
+        width: 58%;
+        margin-left: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    section#about .left{
+
+        padding-top: 1rem;
+        height: auto;
+
+    }
+
+    section#about .right{
+        display: flex;
+    }
+    section#submit .submit-thing .left{
+        justify-content: space-evenly;
+    }
+
+    section#about .about p, section#submit .right p, .bold-link{
+        font-size: .8rem;
+    }
+
+    p.small{
+        font-size: .8rem !important;
+        line-height: 1.2rem !important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    section#top p{
+        font-size: 25px;
+        line-height: 43px;
+        width: auto;
+        text-align: center;
+        color: white;
+    }
 
     section#magazine{
         width: min-content;
