@@ -967,6 +967,10 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         border: none;
     }
 
+    .blurb-box img:nth-child(1){
+        width: auto;
+    }
+
     .loader {
         width: 350px;
         
