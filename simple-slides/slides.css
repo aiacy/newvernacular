@@ -86,9 +86,6 @@
   opacity: 1;
 }
 
-.sImg {
-  animation: fader 3s infinite, fadeIn 3s infinite
-}
 
 @keyframes fader {
   from { opacity: 1.0; }
