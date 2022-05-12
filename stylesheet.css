@@ -1118,7 +1118,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
         font-size: 31px;
         line-height: 47px;
-        width: 69%;
+        
         text-align: center;
         color: white;
         margin: auto;
@@ -1225,7 +1225,6 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
     section#about .about{
         text-align: center;
-        font-size: .85rem;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: none;
         min-width: 60%;
@@ -1459,9 +1458,6 @@ hr{
         justify-content: space-evenly;
     }
 
-    section#about .about p{
-        font-size: .8rem;
-    }
 
     p.small{
         font-size: .8rem;
