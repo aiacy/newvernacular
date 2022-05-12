@@ -68,7 +68,7 @@
 }
 
 .sImg {
-  height: 1200px !important;
+  height: 80vh !important;
   object-fit: cover; /* fill, contain, scale-down */
 }
 
