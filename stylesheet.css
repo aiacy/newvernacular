@@ -275,7 +275,7 @@ body{overflow-x: hidden;
 main{
     display: grid;
     width: 100%;
-    background-color: white;
+
     perspective: 20px;
 }
 
@@ -515,7 +515,6 @@ section#top{
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: -80px;
     background-color: #D06136;
     padding-left: 1rem;
     
@@ -617,6 +616,7 @@ section#about{
     padding: 2rem;
     font-family: 'bw_modelicaregular';
     background: #EEE5DE;
+    margin-top: 8rem;
 }
 
 #explore .left p.small{
@@ -661,7 +661,7 @@ section#about .left{
 }
 
 section#about .right{
-    display: grid;
+    display: flex;
     margin: 1rem;
 }
 
@@ -917,7 +917,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     clear: both;
   }
 
-  @media only screen and (min-width: 769px){
+  @media only screen and (min-width: 1025px){
 
 .mobile-caption{
     display: none;
@@ -959,10 +959,19 @@ input[type=text],input[type=email], input[type=url], select, textarea{
  
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
+    .sSlide{
+        margin: 0 !important;
+    }
+
+    .mobile-caption{
+        padding: 4rem;
+    }
     section#top p {
-       
+        font-size: 29px;
+        line-height: 45px;
+    
         margin: auto;
         
         border: none;
@@ -996,10 +1005,6 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
     nav a#home{
         display: none;
-    }
-
-    .mobile-caption{
-       margin-bottom: 2rem;
     }
 
     .scrolling-text .scrolling-text-content{
@@ -1074,7 +1079,6 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#top{
         flex-direction: column;
         padding: 0;
-        padding-top: 7rem;
         display: flex;
         flex-direction: column;
         justify-content: center;   
@@ -1194,6 +1198,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#about{
         grid-template-columns: none;
         margin: 2rem;
+       
     }
 
     section#about h1{
@@ -1311,6 +1316,10 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
     }
 
+    section#about .right img.mobile{
+        display: none;
+    }
+
 
 .circle{
     height: 400px;
@@ -1416,10 +1425,7 @@ hr{
 }
 
 @media screen and (max-width: 1024px) {
-    section#top p{
-        font-size: 22px;
-        line-height: 31px;
-    }
+
     p.small {
         font-size: 16px !important;
         line-height: 1.7rem !important;
@@ -1442,19 +1448,8 @@ hr{
         padding: 2rem;
     }
 
-    section#about{
-        padding-top: 8rem;
-    }
-
-    section#blurb p {
-        width: 80%;
-    }
-
-    .blurb-box img:nth-child(2) {
-        width: 58%;
-        margin-left: 1rem;
-        margin-bottom: 8rem;
-    }
+    
+ 
 
     section#about .left{
 
@@ -1480,8 +1475,8 @@ hr{
 @media only screen and (max-width: 500px){
 
     section#top p{
-        font-size: 26px;
-        line-height: 43px;
+        font-size: 24px;
+        line-height: 39px;
         width: auto;
         text-align: center;
         color: white;

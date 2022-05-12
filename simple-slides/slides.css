@@ -6,17 +6,14 @@
 .sSlide {
   flex-wrap: wrap;
   position: relative;
-  max-width: 1140px;
-  margin: 7rem;
-  margin-top: 5rem;
-  margin-left: 1rem;
-  margin-right: 2rem;
+  
+
 
 }
 
 /* (C) IMAGE */
 .sImg {
-  height: 584px !important;
+  height: 93vh !important;
   object-fit: cover; /* fill, contain, scale-down */
 }
 
