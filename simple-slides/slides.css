@@ -15,8 +15,8 @@
 
 /* (C) IMAGE */
 .sImg {
-  min-height: 584px;
-  object-fit: fill; /* fill, contain, scale-down */
+  height: 584px !important;
+  object-fit: cover; /* fill, contain, scale-down */
 }
 
 /* (D) CAPTION */

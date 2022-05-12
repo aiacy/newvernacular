@@ -1091,7 +1091,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#top img {
         margin: 0;
         max-width: 100%;
-        min-height: 50vh;
+        height: 50vh !important;
   
 
     }
