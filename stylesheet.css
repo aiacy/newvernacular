@@ -946,11 +946,9 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 
 }
 
-@media only screen and (max-width: 768px){
-    .sImg{
-        height: 50vh;
 
-    }
+@media only screen and (max-width: 768px){
+ 
 
     header{
         margin: 0rem;
@@ -1093,7 +1091,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     section#top img {
         margin: 0;
         max-width: 100%;
-        height: auto;
+        min-height: 50vh;
   
 
     }
