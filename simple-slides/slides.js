@@ -27,11 +27,13 @@ var sslide = {
     // (B2) SLIDESHOW HTML INTERFACE
     let sImg = document.createElement("img"),
         sCaption = document.createElement("div"),
+        sAuthor = document.createElement("div"),
         sLeft = document.createElement("div"),
         sRight = document.createElement("div");
     sSlide.className = "sSlide";
     sImg.className = "sImg";
     sCaption.className = "sCaption";
+    sAuthor.className = "sAuthor";
     sLeft.className = "sLeft";
     sRight.className = "sRight";
     sLeft.innerHTML = "&lt;";
@@ -40,6 +42,7 @@ var sslide = {
     sRight.addEventListener("click", () => { sslide.nav(id, 1); });
     sSlide.appendChild(sImg);
     sSlide.appendChild(sCaption);
+    sSlide.appendChild(sAuthor);
     sSlide.appendChild(sLeft);
     sSlide.appendChild(sRight);
 
@@ -47,6 +50,7 @@ var sslide = {
     inst.current = -1;
     inst.sImg = sImg;
     inst.sCaption = sCaption;
+    inst.sAuthor = sAuthor;
     sslide.nav(id, 1);
   },
 
@@ -65,6 +69,7 @@ var sslide = {
     // (C2) DRAW SLIDE
     inst.sImg.src = slides[inst.current].src;
     inst.sCaption.innerHTML = slides[inst.current].cap;
+    inst.sAuthor.innerHTML = slides[inst.current].author;
 
 
    

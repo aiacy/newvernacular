@@ -1,5 +1,5 @@
 /* (A) SHARED */
-.sImg, .sCaption { width: 100%; }
+.sImg, .sCaption, .sAuthor { width: 100%; }
 .sSlide, .sLeft, .sRight { display: flex; }
 
 /* (B) CONTAINER */
@@ -15,18 +15,24 @@
 
 /* (C) IMAGE */
 .sImg {
-  height: 584px !important;
+  height: 70vh !important;
   object-fit: cover; /* fill, contain, scale-down */
 }
 
 /* (D) CAPTION */
-.sCaption {
+.sCaption, .sAuthor {
   padding: 10px;
   color: #fff;
   background: #000;
   font-family: 'modummedium';
   font-size: 12px;
   text-align: center;
+}
+
+.sAuthor{
+  padding: 0;
+  padding-bottom: .7rem;
+  margin-top: -2px;
 }
 
 /* (E) CONTROLS */
@@ -56,6 +62,18 @@
   opacity: 1;
 }
 
+@media screen and (min-width: 1445px){
+.sSlide{
+  max-width: 1500px;
+}
+
+.sImg {
+  height: 1200px !important;
+  object-fit: cover; /* fill, contain, scale-down */
+}
+
+}
+
 @media screen and (max-width: 768px) {
   .sSlide {
     flex-wrap: wrap;
@@ -69,6 +87,8 @@
     text-align: center;
   }
 }
+
+
 
 .fade {
   -webkit-transition: opacity 1s ease-in-out;

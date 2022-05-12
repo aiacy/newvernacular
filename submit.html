@@ -14,6 +14,11 @@
 </head>
 <body>
     <style>
+
+        main#submit{
+            background-color: #F5986C;
+        }
+        
         #mc_embed_signup #mce-success-response{
             color: black !important;
         }
@@ -32,13 +37,13 @@
             display: flex;
             flex-direction: column;
             background-color: #F5986C !important;
-            width: 50%;
+            width: 55%;
         }
 
         .submissions-container .right{
             background-color: #EEE5DE;
             padding: 2rem;
-            width: 50%;
+            width: 45%;
         }
 
         .submissions-container .right h2{
@@ -48,7 +53,7 @@
 
         .submissions-container button{
             background-color: black;
-            width: 50%;
+            width: fit-content;
         }
 
         .submissions-container button a{
@@ -79,15 +84,31 @@
             width: auto !important;
         }
 
+        @media screen and (min-width: 500px) {
+            section#submit .left{
+                padding: 0;
+            }
+        }
+
         @media screen and (min-width: 767px) {
         
             section#submit.page .left{
-                padding-right: 2rem;
+                padding: 4rem;
+                
+            }
+
+            section#submit.page .right{
+                display: inline;
             }
             
         }
 
         @media only screen and (max-width: 767px) {
+
+            section#submit .left{
+                width: 100%;
+                padding: 0;
+            }
 
             .submissions-container button{
                 width: 100%;
@@ -164,7 +185,7 @@ form{
     </style>
 </body>
 
-    <main>
+    <main id="submit">
         <header id="header">
             <div class="logo">
                 <a href="./index.html#top">
@@ -202,7 +223,7 @@ form{
                         paste the link at the end of the form.
                     </p>
                     <p>Please note that only submissions that meet the requirements will be reviewed.</p>
-                    <button><a href="./submission-requirements.zip" download>Download Submissions Folder</a></button>
+                    <button class="download"><a href="./submission-requirements.zip" download>Download Submissions Folder</a></button>
                 </div>
 
                 <div class="right">

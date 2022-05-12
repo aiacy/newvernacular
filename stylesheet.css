@@ -1334,16 +1334,7 @@ section#submit .submit-thing .left {
     display: none;
 }
 
-    section#submit .left {
-        background-color: #EEE5DE;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-         padding: 0rem;
-        width: auto;
-        max-width: 390px;
-        flex-direction: column;
-    }
+
 
     section#submit{
         display: flex;
@@ -1358,7 +1349,7 @@ section#submit .submit-thing .left {
     }
 
     form{
-        max-width: max-content;
+     
         margin-top: 2rem;
     }
 
@@ -1378,9 +1369,7 @@ section#submit .submit-thing .left {
     padding-top: 6rem;
     }
 
-    form{
-        max-width: max-content;
-    }
+
     textarea{
         max-width: inherit ;
     }
@@ -1424,6 +1413,10 @@ section#submit .submit-thing .left {
 
 hr{
     transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1441px) {
+    
 }
 
 @media screen and (max-width: 1024px) {
