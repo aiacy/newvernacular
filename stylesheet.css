@@ -541,6 +541,7 @@ section#top .right{
     margin-right: 2rem;
     margin-left: 2rem;
     width: 79%;
+    height: 80vh;
     align-items: center;
     
 }
@@ -923,6 +924,10 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     display: none;
 }
 
+section#top.caption{
+    font-size: 1.8rem;
+}
+
   }
 
   
@@ -1103,6 +1108,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
         padding-right: 0;
         justify-items: start;
         place-items: start !important;
+        height: auto;
     }
 
     section#top .right p.caption{
