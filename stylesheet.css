@@ -1304,7 +1304,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     section#social{
-        margin: 0;
+        
         padding: 1rem;
         margin-top: 3rem;
 
@@ -1489,9 +1489,7 @@ hr{
         height: auto;
     }
 
-    section#social{
-        margin: 0;
-    }
+
 
     section#submit .left {
         background-color: #EEE5DE;
