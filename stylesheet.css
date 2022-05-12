@@ -947,6 +947,11 @@ input[type=text],input[type=email], input[type=url], select, textarea{
 }
 
 @media only screen and (max-width: 768px){
+    .sImg{
+        height: 50vh;
+
+    }
+
     header{
         margin: 0rem;
         position: relative;
@@ -966,7 +971,7 @@ input[type=text],input[type=email], input[type=url], select, textarea{
     }
 
     .mobile-caption{
-        padding: 4rem;
+        padding: 2rem;
     }
     section#top p {
         font-size: 29px;
@@ -1443,12 +1448,6 @@ hr{
     section#about .right{
         display: flex;
     }
-
-    section#submit{
-        padding: 2rem;
-    }
-
-    
  
 
     section#about .left{
@@ -1473,7 +1472,7 @@ hr{
 }
 
 @media only screen and (max-width: 500px){
-
+ 
     section#top p{
         font-size: 24px;
         line-height: 39px;
