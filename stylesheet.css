@@ -1131,6 +1131,7 @@ section#top.caption{
       
     }
 
+
     section#top button{
         margin: auto;
         width: auto;
@@ -1431,6 +1432,7 @@ hr{
         font-size: 16px !important;
         line-height: 1.7rem !important;
         font-family: 'bw_modelicaregular' !important;
+        padding-top: 0;
     }
 
     section#submit .right p{
